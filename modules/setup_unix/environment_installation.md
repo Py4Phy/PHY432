@@ -5,11 +5,10 @@ nav_exclude: true
 has_children: false
 ---
 
-----
+# Installing your software environment
 
-Note: the course website is accessible at 
-
-----
+Follow the instructions on this page in order to install all the
+software that you will need for this class.
 
 <details open markdown="block">
   <summary>
@@ -25,9 +24,9 @@ Note: the course website is accessible at
 
 You will need to install
 
-1. [The Bash Shell](#shell)
+1. [The Bash Shell](#the-bash-shell)
 2. [Git](#git)
-3. a [text editor](#editor) (by default, `atom`)
+3. a [text editor](#text-editor) (by default, `atom`)
 4. [Python](#python) (including a number of additional packages
 required for scientific computing)
 
@@ -315,7 +314,7 @@ before anything else.</li>
 	installation.</li>
   </ol>
 	  
-#### Linux<
+#### Linux
   <ol>
 	<li>Open <a href="https://anaconda.com/download/#linux">https://anaconda.com/download/#linux</a> with your web browser.</li>
 	<li>Download the Python 3 installer for Linux. (Most likely the 64-Bit (x86) Installer is correct for your laptop.)</li>
@@ -488,11 +487,11 @@ If you have problems, ask an instructor.
 See also [trouble shooting problems during the installation]({{ site.wiki.url }}/installation-troubleshooting)
 
 
-## Credit
+## Credits
 
-The instructions were taken from [Software
+The instructions were originally taken from [Software
 Carpentry](https://software-carpentry.org/) (in particular [David
 Dotson's 2016 workshop at
 ASU](http://smallerthings.org/2016-01-07_asu_physics/)) and adapted
-for the PHY 494 class.
+for the PHY 432 class.
 
