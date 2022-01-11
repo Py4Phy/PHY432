@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Calendar
 description: Listing of course modules and topics.
 ---
