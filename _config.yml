@@ -30,13 +30,12 @@ remote_theme: pmarsceill/just-the-docs@v0.3.3
 # https://github.com/self-xdsd/self-docs for using alternative _config:
 # 'bundle exec jekyll serve --config _config_local.yml'
 #theme: "just-the-docs"
+
 color_scheme: light
 search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
-  Oliver Beckstein:
-    - 'https://becksteinlab.physics.asu.edu/'
   Canvas (Spring 2022):
     - 'https://asu.instructure.com/courses/105935'
   ASU Physics:
