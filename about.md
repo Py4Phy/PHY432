@@ -30,7 +30,12 @@ a programming language widely used in scientific computing, and
 critically evaluate their numerical results. Problems will be drawn
 from diverse areas of physics.
 
+## Syllabus
+
+[Syllabus (PDF)]({{ site.baseurl }}/{{ site.docs }}/phy432_syllabus_2022.pdf)
+
 ## Lecture
+See the [weekly schedule]({{ site.baseurl }}/schedule/).
 
 * Tue/Thu 1:30 pm – 2:45pm, PSH 355
 * bring your laptop
