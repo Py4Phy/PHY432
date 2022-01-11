@@ -10,4 +10,4 @@ photo: oliver_beckstein.png
 
 Oliver Beckstein leads a computational research group in the Center for Biological Physics and in the Department of Physics at Arizona State University.
 
-He obtained his undergraduate degree (Diplom Physik) from the Department of Physics at the Universität Erlangen-Nürnberg, Germany and his doctoral degree (DPhil) from the Department of Biochemistry at the University of Oxford, UK. 
+He obtained his undergraduate degree (Diplom Physik) from the Department of Physics at the UniversitÃ¤t Erlangen-NÃ¼rnberg, Germany and his doctoral degree (DPhil) from the Department of Biochemistry at the University of Oxford, UK. 
