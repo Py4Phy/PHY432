@@ -1,23 +1,15 @@
 ---
-title: Introduction to Java
+title: Setting up and The Command Line
 ---
 
-Sep 28
-: [Java & Git](#)
-  : [1.1](#)
 
-Sep 29
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
 
-Sep 30
-: [Variables & Objects](#)
-  : [1.2](#), [2.1](#)
+Jan 11
+: [intro and set up]({{ site.baseurl }}/modules/setup_unix/environment_installation/)
+  : bash, git, anaconda, Atom
 
-Oct 1
-: **Lab**{: .label .label-purple } [Intro to Java](#)
+Jan 13
+: [Unix shell](#)
+  : file system, `bash`
+   
 
-Oct 2
-: [Tracing, IntLists, & Recursion](#)
-  : [2.1](#)
-: **HW 1 due**{: .label .label-red }
