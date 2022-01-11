@@ -22,7 +22,14 @@ url: 'https://py4phy.github.io' # the base hostname & protocol for your site, e.
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
 # Theme settings
+# On GitHub: use remote_theme
 remote_theme: pmarsceill/just-the-docs@v0.3.3
+
+# local development: use installed theme
+# see https://github.com/pmarsceill/just-the-docs/issues/297
+# https://github.com/self-xdsd/self-docs for using alternative _config:
+# 'bundle exec jekyll serve --config _config_local.yml'
+#theme: "just-the-docs"
 color_scheme: light
 search_enabled: true
 heading_anchors: true
@@ -97,6 +104,10 @@ siteresources:       "public/resources"
 
 course:
  url:                "https://becksteinlab.physics.asu.edu/learning/146/phy432-computational-physics"
+
+canvas:
+ name:               "Canvas (ASU PHY432 Spring 2022)"
+ url:                "https://asu.instructure.com/courses/105935"
 
 resources:
  name:               Py4Phy/PHY432-resources
