@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Announcements
 nav_exclude: true
 description: A feed containing all of the class announcements.
@@ -7,7 +7,7 @@ description: A feed containing all of the class announcements.
 
 # Announcements
 
-Announcements are stored in the `_announcements` directory and rendered according to the layout file, `_layouts/announcement.html`.
+Please also check Canvas for class announcements.
 
 {% assign announcements = site.announcements | reverse %}
 {% for announcement in announcements %}
