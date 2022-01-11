@@ -5,10 +5,8 @@ nav_exclude: true
 has_children: false
 ---
 
-# Installing your software environment
-
-Follow the instructions on this page in order to install all the
-software that you will need for this class.
+Follow the instructions on this page in order to **install all the
+software that you will need for this class**.
 
 <details open markdown="block">
   <summary>
