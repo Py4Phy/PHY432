@@ -76,3 +76,45 @@ compress_html:
 
 plugins_dir:
   - jekyll-seo-tag
+
+# Custom variables
+# ----------------
+
+# About/contact
+author:
+  name:              'Oliver Beckstein'
+  url:               https://becksteinlab.physics.asu.edu/people/11/oliver-beckstein
+  email:             oliver.beckstein@asu.edu
+
+# use as {{site.baseurl}}/{{site.data}}
+data:                "public/data"
+code:                "public/code"
+figs:                "public/figs"
+movies:              "public/movies"
+lectures:            "public/lectures"
+docs:                "public/docs"
+siteresources:       "public/resources"
+
+course:
+ url:                "https://becksteinlab.physics.asu.edu/learning/146/phy432-computational-physics"
+
+resources:
+ name:               Py4Phy/PHY432-resources
+ shortname:          PHY432-resources
+ url:                https://github.com/Py4Phy/PHY432-resources
+ fileurl:            https://github.com/Py4Phy/PHY432-resources/blob/master 
+
+org:
+ name:               Py4Phy
+ shortname:          GitHub site
+ url:                https://github.com/Py4Phy
+
+wiki:
+ name:               ASU Comp Phys PHY432 Wiki
+ shortname:          Wiki
+ url:                https://github.com/Py4Phy/PHY432-resources/wiki
+
+nbviewer:
+   show:             https://nbviewer.jupyter.org/github
+   resources:        https://nbviewer.jupyter.org/github/Py4Phy/PHY432-resources/blob/master
+   slides:           https://nbviewer.jupyter.org/format/slides/github/Py4Phy/PHY432-resources/blob/master
