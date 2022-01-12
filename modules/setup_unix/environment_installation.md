@@ -37,17 +37,14 @@ installation](#testing).
 
 ## Setup
 
-<p>
-  To participate in a the class, you will need
-  access to the software described below. In addition, you will
-  need an up-to-date web browser.
-</p>
-<p>
-  If you encounter <strong>problems during the installation</strong>
-  ask an instructor for help.  We also maintain resources for <a
-  href="https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting">trouble
-  shooting problems during the installation</a>.
-</p>
+To participate in a the class, you will need access to the software
+described below. In addition, you will need an up-to-date web browser.
+
+If you encounter <strong>problems during the installation</strong> ask
+an instructor for help.  We also maintain resources for [trouble
+shooting problems during the installation]({{ site.wiki.url
+}}/installation-troubleshooting)
+
 
 ### The Bash Shell
 
@@ -413,7 +410,7 @@ File](https://flight-manual.atom.io/getting-started/sections/atom-basics/#openin
 (and provide your system administrator password if requested). Then
 add the atom directory to your bash start file manually as described
 under Wiki:[start atom from the git-bash
-commandline]({{site.wiki.url}}/installation-troubleshooting#start-atom-from-the-git-bash-commandline).)
+commandline]({{ site.wiki.url }}/installation-troubleshooting#start-atom-from-the-git-bash-commandline).)
 
 
 ### Python
@@ -461,9 +458,7 @@ cell. It should print "Hello World!".</li>
 <li>Close the browser tab with menu <tt>File: Close and Halt</tt>.</li>
 </ol>
 
-<p>
 If you have problems, ask an instructor.
-</p>
 
 
 #### Common problems
