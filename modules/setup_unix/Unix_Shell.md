@@ -196,7 +196,7 @@ pwd
 
 which shows `/home/dvader`.
 
-##### Activity: Find Your Home #####
+##### <span class="label" style="background: black">Activity</span> Find Your Home #####
 
 * Open Terminal
 * Type
@@ -220,7 +220,7 @@ data
 ~~~
 {: .output}
 
-##### Activity: List Your Home directory #####
+##### <span class="label" style="background: black">Activity</span> List Your Home directory #####
 
 * open a terminal (or use the open terminal from the last exercise)
 * Type
@@ -270,7 +270,7 @@ electrical_bill.dat  weaknesses.pdf
 The `cd` command took an *argument*, the directory to go to.
 
 
-##### Activity: Going up #####
+##### <span class="label" style="background: black">Activity</span> Going up #####
 
 * Go to the parent directory of your home dir:
 
@@ -285,7 +285,7 @@ The `cd` command took an *argument*, the directory to go to.
   {% endhighlight %}
 
 
-##### Activity: Going Home #####
+##### <span class="label" style="background: black">Activity</span> Going Home #####
 
 * Type
 
@@ -412,7 +412,7 @@ bash: cd: bogus: No such file or directory
 {: .text-red-300 .m-1}
 
 
-### Activity: Explore your file system  ###
+### <span class="label" style="background: black">Activity</span> Explore your file system  ###
 
 1. What does the following sequence of commands show?
    ```bash
@@ -475,7 +475,7 @@ We want to
 * your editor of choice (*atom* by default for the class, `nano` is
   an alternative choice [^2])
 
-#### Activity: Directory structure for the class ####
+#### <span class="label" style="background: black">Activity</span> Directory structure for the class ####
 
 Make a directory `PHY432` in your home directory for the class and
 inside it, one called `01_shell` for today's lesson, using the
@@ -561,7 +561,7 @@ atom TODO
 → *Open* dialog.)
 
 
-##### Activity: create a file with your editor #####
+##### <span class="label" style="background: black">Activity</span> create a file with your editor #####
 
 * Create a file `~/PHY432/Documents/work/lesson.txt` with three
   lessons from today:
