@@ -8,9 +8,9 @@ This lesson introduces the **shell**, also known as the **command
 line**. There are many different shells: We are using the
 **[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))** shell.
 
-An *optional* lesson on more advanced [intermediate shell features]({%
-link modules/setup_unix/Intermediate_Unix_Shell.md %}) is also available for you
-if you are interested.
+An *optional* lesson on more advanced [intermediate shell features](
+{{ site.baseurl }}{% link modules/setup_unix/Intermediate_Unix_Shell.md %}) is also available
+for you if you are interested.
 
 <details open markdown="block">
   <summary>
@@ -311,9 +311,9 @@ are understood by all commands.
 ### Autocompletion ###
 
 * Use the `TAB` key while typing: *autocompletion* is one of the best
-  features of the shell!
+  features of the shell! <span class="label">Pro Tip!</span>
 * The other great interactive feature is the *history*: try using the
-  cursor-up and -down keys.
+  cursor-up and -down keys. <span class="label">Pro Tip!</span>
 
 ### Wildcards ###
 
@@ -352,6 +352,7 @@ ls /usr/bin/*oo*
 
 **Warning**: DO NOT COPY AND PASTE ANY COMMAND LINE CONTAINING `rm`
 WITHOUT THINKING *TWICE* ABOUT IT. You have been warned.
+{: .p-2 .text-red-300}
 
 Delete all jpg images in directories from the last century
 
@@ -404,17 +405,32 @@ bash: cd: bogus: No such file or directory
 ~~~~~
 
 **Always read error messages!**
+{: .text-red-300 .m-1}
+
 
 ### Activity: Explore your file system  ###
 
 1. What does the following sequence of commands show?
-
-        cd
-        ls -a
-
+   ```bash
+   cd
+   ls -a
+   ```
+   
 2. Go to the `bin` directory that is located in the root directory (at
-   least on Linux and macOS) or to the bin directory in `~/Anaconda3/bin` (on Windows). List the files
-   there. Did you find "cp" and "grep"? If not, see if you have `/usr/bin`.
+   least on Linux and macOS, this would be `/bin`) or to the anaconda
+   distribution's `bin` directory (e.g.,`~/Anaconda3/bin`) (on Windows).
+
+   1. List the files there.
+   2. Did you find "cp" and "grep" and also "ls"? 
+   
+   If you cannot find any of these `bin` directories run the command
+   ```bash
+   which ls
+   ```
+   
+   which should display something like `/PATH/TO/ls` where "/PATH/TO"
+   is the *directory* that contains the `ls` command. Use that
+   directory as the `bin`-directory to investigate. 
 3. What does `ls -R /` show? (Try `^C`, i.e., press CONTROL and C at
    the same time...)
 4. Try other options of `ls` such as `-sh` or `-sha`. --- ask `ls` for
@@ -427,8 +443,8 @@ bash: cd: bogus: No such file or directory
 ### Tips to make your (shell) life easy ###
 
 * Use the shell's convenience features:
-  * `TAB` completion 
-  * up/down arrow to get commands that you already typed. 
+  * `TAB` completion <span class="label">Pro Tip!</span>
+  * up/down arrow to get commands that you already typed. <span class="label">Pro Tip!</span>
   * `history` shows all the commands you typed so far
   * Try out `Control`+`R` (`^R`) to search through your shell
     *history*.
@@ -472,7 +488,7 @@ Note:
 
 * *Avoid spaces and most special characters in file names.* All
   letters and numbers together with underscore `_`, minus sign `-`,
-  and period `.` are ok. [^1]
+  and period `.` are ok. [^1] <span class="label">Pro Tip!</span>
 * Plain `mkdir` cannot create multiple directories deep in one go
   unless you have the `-p` option available (check!).
 
@@ -568,10 +584,13 @@ atom TODO
 
   **WARNING: There is no "Trashcan" or built in backup. Once you `rm`
 something, it is gone.** Be especially careful with `rm -r`.
+  {: .m-1 .text-red-300 }
+
 
   **WARNING: Do not execute `rm -rf *`. It will erase everything permanently.**
+  {: .m-1 .text-red-300 }
 
-Note: all these commands can also work on multiple filenames.
+Note: all these commands can also work on multiple filenames. <span class="label">Pro Tip!</span>
 
 
 #### Activity (homework) ####
@@ -681,6 +700,5 @@ Shell](https://swcarpentry.github.io/shell-novice/).
 [^4]:
 
     If you cannot start `atom` from the commandline, go back to
-	[Setting up the Environment: Testing: editor (atom)]({% link
-    modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
+	[Setting up the Environment: Testing: editor (atom)]({{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
     the steps described there.

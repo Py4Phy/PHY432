@@ -4,12 +4,13 @@ title: Intermediate Shell Hacks (optional)
 nav_exclude: true
 ---
 
-This lesson extends the [lesson on the bash shell]({% link
-modules/setup_unix/Unix_Shell.md %}) for anyone who wants to dive
+This lesson extends the [lesson on the bash shell](
+{{ site.baseurl }}{% link modules/setup_unix/Unix_Shell.md %}) for anyone who wants to dive
 deeper into how to use the commandline productively. **It is
-optional.** {: .p-1 .bg-yellow-000}
+optional.** 
+{: .p-1 .bg-yellow-000}
 
-The real power of the [shell]({% link modules/setup_unix/Unix_Shell.md %}) lies
+The real power of the [shell]({{ site.baseurl }}{% link modules/setup_unix/Unix_Shell.md %}) lies
 in the fact that one can combine multiple shell commands and in this
 way automate pretty much any task that operates on files and
 directories. The two major ways to combine shell commands are
@@ -26,9 +27,8 @@ having to type them repeatedly. The bash shell is actually a complete
 programming language and one can accomplish rather complicated tasks
 with it.
 
-Additionally, [command completion]({% link
-modules/setup_unix/Unix_Shell.md %}#autocompletion) ("TAB-completion")
-and [wildcards]({% link modules/setup_unix/Unix_Shell.md %}#wildcards) enable
+Additionally, [command completion]({{ site.baseurl }}{% link modules/setup_unix/Unix_Shell.md %}#autocompletion) ("TAB-completion")
+and [wildcards]({{ site.baseurl }}{% link modules/setup_unix/Unix_Shell.md %}#wildcards) enable
 *fast interactive work*.
 
 The following is very useful but for right now not essential and is
@@ -373,6 +373,5 @@ Updated resources in /Users/oliver/PHY432-resources
 [^4]:
 
     If you cannot start `atom` from the commandline, go back to
-	[Setting up the Environment: Testing: editor (atom)]({{ site.baseurl }}{% link
-    modules/setup_unix/Setting_up_the_environment.md %}#from-the-shell) and follow
+	[Setting up the Environment: Testing: editor (atom)]{{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
     the steps described there.
