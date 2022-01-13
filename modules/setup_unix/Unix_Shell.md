@@ -130,6 +130,10 @@ The operating system manages access to files and directories in the **file syste
 * **files** = documents, data, pictures, ...
 * **directory** = "folder"; may contain any number of files or other directories
 
+![Linux file system (modified from from
+https://www.serverkaka.com/2018/01/key-locations-in-linux-file-system_21.html)]({{
+site.baseurl }}/{{ site.figs }}/filesystem.png)
+
 Instead of using your graphical File Explorer or Finder we want to use shell commands to
 * move around the file system
 * get information about files and directories
