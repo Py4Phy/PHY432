@@ -115,6 +115,7 @@ resources:
  shortname:          PHY432-resources
  url:                https://github.com/Py4Phy/PHY432-resources
  fileurl:            https://github.com/Py4Phy/PHY432-resources/blob/master 
+ giturl:             https://github.com/Py4Phy/PHY432-resources.git
 
 org:
  name:               Py4Phy
