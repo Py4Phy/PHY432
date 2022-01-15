@@ -65,7 +65,7 @@ the [other resources](#more).
 The first time you use `git` you need to tell it who you are: this
 information will be the user information in the commit history. 
 
-#### Personalization
+#### <span class="label" style="background: black">Activity</span> Personalization
 
 Set your name and email. 
 
@@ -113,7 +113,7 @@ git config --global core.autocrlf input
 You can see a list of all your configuration settings with `git config
 --list`.
 
-#### Git Editor
+#### <span class="label" style="background: black">Activity</span> Git Editor
 
 You also tell what editor to use to write commit messages [^1]; here
 we configure [atom to be used with git](https://help.github.com/articles/associating-text-editors-with-git/). 
@@ -153,7 +153,7 @@ try `git help` and `git help tutorial`.
 
 A repository starts from a directory with files.
 
-#### Create your `~/PHY432` directory ####
+#### <span class="label" style="background: black">Activity</span>  Create your `~/PHY432` directory ####
 
 During the class you will work on programs. Make a directory
 `~/PHY432` where you will do your work:
@@ -411,7 +411,7 @@ cloud". One of them is [GitHub](https://github.com) (which we use for
 this class).[^7]
 
 
-#### Initializing from remote: `git clone`
+#### <span class="label" style="background: black">Activity</span>  Initializing from remote: `git clone`
 
 To initialize a local repository from a remote source we use `git clone`:
 
@@ -465,7 +465,7 @@ repositories](#set-up-your-own-github-repositories)).
 
 
 
-## Set up your own GitHub repositories
+## <span class="label" style="background: black">Activity</span>  Set up your own GitHub repositories
 
 1. Go to <https://github.com> and create a new account. It is
    free.[^2] Remember your
