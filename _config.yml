@@ -31,6 +31,7 @@ remote_theme: pmarsceill/just-the-docs@v0.3.3
 # 'bundle exec jekyll serve --config _config_local.yml'
 #theme: "just-the-docs"
 
+# logo: "/assets/images/phy432_logo.png"
 color_scheme: light
 search_enabled: true
 heading_anchors: true
