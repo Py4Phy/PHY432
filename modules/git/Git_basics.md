@@ -153,7 +153,7 @@ try `git help` and `git help tutorial`.
 
 A repository starts from a directory with files.
 
-#### <span class="label" style="background: black">Activity</span>  Create your `~/PHY432` directory ####
+#### <span class="label" style="background: black">Activity</span> Create your `~/PHY432` directory ####
 
 During the class you will work on programs. Make a directory
 `~/PHY432` where you will do your work:
@@ -287,7 +287,7 @@ The *basic Git workflow*:
    them permanently in your Git repository)
 
 
-### <span class="label" style="background: black">Activity</span>  Adding files ###
+### <span class="label" style="background: black">Activity</span> Adding files ###
 
 Prepare the modified files to be committed to the repository: `git
 add` adds files and directories to the *staging area*:
@@ -314,7 +314,7 @@ The files are not committed yet. You can do more work, add more files
 and directories...
 
 
-### <span class="label" style="background: black">Activity</span>  Committing ###
+### <span class="label" style="background: black">Activity</span> Committing ###
 Check-in (or **commit**) your changes to your git repository:
 
 {% highlight bash %}
@@ -358,7 +358,7 @@ git commit
 {% endhighlight %}
 should show that you have no uncommited changes in your working directory.
 
-### <span class="label" style="background: black">Activity</span>  History
+### <span class="label" style="background: black">Activity</span> History
 
 Git stores complete snapshots of your working tree in the repository:
 each version (or commit) can be used to recreate an exact state of all
@@ -465,13 +465,13 @@ repositories](#set-up-your-own-github-repositories)).
 
 
 
-## <span class="label" style="background: black">Activity</span>  Set up your own GitHub repositories
+## <span class="label" style="background: black">Activity</span> Set up your own GitHub repositories ##
 
 1. Go to <https://github.com> and create a new account. It is
    free.[^2] Remember your
    GitHub **username** and the **password**.
 2. Create a new repository *PHY432* (do not initialize it with a
-   README or other file)
+   README or other file). You can make it *private* if you like.
 3. Note the repository URL
    https://github.com/USERNAME/PHY432.git
 4. Add the remote repository to your local repository `~/PHY432`
@@ -519,7 +519,7 @@ there; you will receive *private* repositories for the duration of the
 class for this purpose.
 
 
-## PHY432 Workflow: Resources and Workspace
+## PHY432 Workflow: Resources and Workspace ##
 
 Code, notebooks, and files are being made available on GitHub in the
 **resources** repository
@@ -536,9 +536,9 @@ git clone {{ site.resources.giturl }}
 {% endhighlight %}
 
 You should also [have your own **workspace** repository `~/PHY432` set
-up](#set-up-your-own-github-repositories).
+up](#activity-set-up-your-own-github-repositories).
  
-### Overview
+### Overview ###
 
 When we start a new lesson you will typically go through the following steps to
 get code and data files.
@@ -549,7 +549,7 @@ get code and data files.
 4. commit changes in your workspace
 5. (optional) push changes in your workspace your GitHub repository
 
-### Update resources ("pull resources")
+### Update resources ("pull resources") ###
 
 Update when your instructor changed anything on the remote:
 
@@ -564,7 +564,7 @@ ls -lt
 {% endhighlight %}
 (newest at top)
 
-### Copy new files and directories to workspace ("copy resources")
+### Copy new files and directories to workspace ("copy resources") ###
 
 You should not be changing anything inside `~/{{ site.resources.shortname }}`
 (because the next `git pull` might try to change something that you
@@ -593,7 +593,7 @@ cd ~/PHY432/05_debugging
 {% endcomment %}
 
 
-### Work, commit, push
+### Work, commit, push ###
 Then work on the files **in the workspace**.
 
 When you have changes that you want to track, `git add /
@@ -605,7 +605,7 @@ git push
 {% endhighlight %}
 
 
-## Contributing to Open Source on GitHub
+## Contributing to Open Source on GitHub ##
 
 [GitHub](https://github.com) is a provider for remote repositories. It
 enables you to easily contribute to other projects. This includes
@@ -634,7 +634,7 @@ enables you to easily contribute to other projects. This includes
   
 ------------------------------------------------------------
   
-#### Footnotes
+## Footnotes
 
 [^0]:
 
