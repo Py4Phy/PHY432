@@ -39,7 +39,9 @@ aux_links:
   Canvas (Spring 2022):
     - 'https://asu.instructure.com/courses/105935'
   Discord:
-    - "https://discord.com/channels/928314301553442866/928314301553442868"
+    - 'https://discord.com/channels/928314301553442866/928314301553442868'
+  Py4Phy:
+    - 'https://github.com/Py4Phy'
   ASU Physics:
     - 'https://physics.asu.edu'
 footer_content:
@@ -77,7 +79,7 @@ defaults:
 compress_html:
   clippings: all
   comments: all
-  endings: all
+  endings: []
   startings: []
   blanklines: false
   profile: false
@@ -98,6 +100,7 @@ author:
 data:                "assets/data"
 code:                "assets/code"
 figs:                "assets/figs"
+images:              "assets/images"
 movies:              "assets/movies"
 lectures:            "assets/lectures"
 docs:                "assets/docs"

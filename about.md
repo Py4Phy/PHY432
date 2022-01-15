@@ -16,8 +16,10 @@ description: >-
 
 ---
 
-## About
+## Synopsis
 
+![PHY432 logo]({{ site.baseurl }}{% link assets/images/phy432_logo.png %})
+{: .float-right }
 **Computational Methods in Physics** is an undergraduate class run in
 the [Department of Physics](https://physics.asu.edu) at [Arizona State
 University](https://asu.edu). The instructor is
@@ -32,7 +34,9 @@ from diverse areas of physics.
 
 ## Syllabus
 
-[Syllabus (PDF)]({{ site.baseurl }}/{{ site.docs }}/phy432_syllabus_2022.pdf)
+For details about the class content, grading, and expectations please
+see the [Syllabus (PDF)]({{ site.baseurl }}{% link
+assets/docs/phy432_syllabus_2022.pdf %}).
 
 ## Lecture
 See the [weekly schedule]({{ site.baseurl }}/schedule/).
