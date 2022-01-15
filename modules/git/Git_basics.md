@@ -220,7 +220,7 @@ use `ls -R ~/PHY432` to check):
       └── README.md        <---- should be present
 ~~~
 
-#### `git init` ####
+#### <span class="label" style="background: black">Activity</span> Initializing a repository with `git init` ####
 
 Turn the `PHY432` directory into **repository** with the `git init` command:
 
@@ -287,7 +287,7 @@ The *basic Git workflow*:
    them permanently in your Git repository)
 
 
-### Adding files ###
+### <span class="label" style="background: black">Activity</span>  Adding files ###
 
 Prepare the modified files to be committed to the repository: `git
 add` adds files and directories to the *staging area*:
@@ -314,7 +314,7 @@ The files are not committed yet. You can do more work, add more files
 and directories...
 
 
-### Committing ###
+### <span class="label" style="background: black">Activity</span>  Committing ###
 Check-in (or **commit**) your changes to your git repository:
 
 {% highlight bash %}
@@ -358,7 +358,7 @@ git commit
 {% endhighlight %}
 should show that you have no uncommited changes in your working directory.
 
-### History
+### <span class="label" style="background: black">Activity</span>  History
 
 Git stores complete snapshots of your working tree in the repository:
 each version (or commit) can be used to recreate an exact state of all
