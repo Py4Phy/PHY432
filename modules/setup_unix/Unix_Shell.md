@@ -354,9 +354,12 @@ ls /usr/bin/*oo*
 
 #### Example: Delete jpg files in directories 19xx
 
-**Warning**: DO NOT COPY AND PASTE ANY COMMAND LINE CONTAINING `rm`
+
+**Warning**
+{: .label .label-red .float-left }
+DO NOT COPY AND PASTE ANY COMMAND LINE CONTAINING `rm`
 WITHOUT THINKING *TWICE* ABOUT IT. You have been warned.
-{: .p-2 .text-red-300}
+{: .text-red-300 }
 
 Delete all jpg images in directories from the last century
 
@@ -408,6 +411,8 @@ This gives
 bash: cd: bogus: No such file or directory
 ~~~~~
 
+**Warning**
+{: .label .label-red .float-left }
 **Always read error messages!**
 {: .text-red-300 .m-1}
 
@@ -586,13 +591,17 @@ atom TODO
 * `rmdir` (remove empty directory)
 * `rm` (remove file, `rm -r` remove recursively (**dangerous!**))
 
-  **WARNING: There is no "Trashcan" or built in backup. Once you `rm`
-something, it is gone.** Be especially careful with `rm -r`.
-  {: .m-1 .text-red-300 }
+  **WARNING**
+  {: .label .label-red .float-left }
+  There is no "Trashcan" or built in backup. Once you `rm`
+  something, it is gone. Be especially careful with `rm -r`.
+  {: .text-red-300 }
 
 
-  **WARNING: Do not execute `rm -rf *`. It will erase everything permanently.**
-  {: .m-1 .text-red-300 }
+  **WARNING**
+  {: .label .label-red .float-left }
+  Do not execute `rm -rf *`. It will erase everything permanently.
+  {: .text-red-300 }
 
 Note: all these commands can also work on multiple filenames. <span class="label">Pro Tip!</span>
 

@@ -563,7 +563,7 @@ session to the `~/PHY432` repository on your laptop (and also push
 to your GitHub repository as a backup).
 
 **Note**
-{: .label .float-left .bg-yellow-000 .text-grey-dk-300 }
+{: .label .label-yellow .float-left .text-grey-dk-300 }
 Your GitHub repository is for in-class work. Do not commit homeworks
 there; you will receive *private* repositories for the duration of the
 class for this purpose.
@@ -736,7 +736,7 @@ enables you to easily contribute to other projects. This includes
          git remote set-url origin https://USERNAME:TOKEN@github.com/USERNAME/PHY432.git
    
     **WARNING** 
-	{: .label .bg-red-300 .float-left }
+	{: .label .label-red .float-left }
 	Note that storing your token in this way exposes it
     to anyone who can get hold of your computer because it is stored
     in clear text in the `.git` repository and is visible with `git
