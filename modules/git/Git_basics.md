@@ -437,8 +437,9 @@ Note:
 * For all other `git` commands you *must* be *inside* your local
   repository:
 
-      cd ~/{{ site.resources.shortname }}
-
+  ```bash
+  cd ~/{{ site.resources.shortname }}
+  ```
 
 #### Getting changes (reading): `git pull`
 
@@ -465,7 +466,11 @@ repositories](#set-up-your-own-github-repositories)).
 
 
 
-## <span class="label" style="background: black">Activity</span> Set up your own GitHub repositories ##
+## Set up your own GitHub repositories ##
+
+Let's set up a remote repository for your work in the class. 
+
+### <span class="label" style="background: black">Activity</span> Create GitHub repo and authentication ###
 
 1. Go to <https://github.com> and create a new account. It is
    free.[^2] Remember your
@@ -473,136 +478,143 @@ repositories](#set-up-your-own-github-repositories)).
 2. Create a new repository *PHY432* (do not initialize it with a
    README or other file). You can make it *private* if you like.
 3. Note the repository URL
-   https://github.com/USERNAME/PHY432.git
-4. Add the remote repository to your local repository `~/PHY432`
-   (replace *USERNAME* with your GitHub username):
+   https://github.com/USERNAME/PHY432.git   
+4. Set-up **authentication** with a [Personal Access
+   Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+   [^3].
+   
+   Follow the instructions to [create a
+   token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token).
+   
+   - Name it "PHY432 class" (something that tells you what to use
+     it for).
+   - You can set an expiration date at the end of the class in May
+	 (as a security precaution).
+   - For *scope* select only **repo**.
+   - Generate the token. (It will look like "ghp_6HA...6i5Dy".)
+   
+   - *Copy the token*, you will only see it *once*. 
+	 Store it in a safe place.
+	 {: .text-red-300 }
+	 
+   - **Warning**: Treat the token like a password and keep it
+	 **secret**.
+	 {: .text-red-300 }	 
 
-        git remote add origin https://github.com/USERNAME/PHY432.git
+
+   When you need to authenticate yourself in order to work with your
+   GitHub repositories you will enter
+   - your *username* for username
+   - your *personal access token* instead of a password
+   
+   You can always regenerate a new token.
+   
+   
+### <span class="label" style="background: black">Activity</span> Link local and remote repositories ###
+
+We now have to set the newly created, empty GitHub repository as the remote repo for your local one:
+
+1. Add the remote repository to your local repository `~/PHY432`
+   (replace *USERNAME* with your GitHub username) [^8]:
+
+   ```bash
+   git remote add origin https://github.com/USERNAME/PHY432.git
+   ```
 
    We named the remote "origin", which is a common choice for the main
    repository. You can have many different remotes, just give them
    different names. You can list them with
 
-        git remote -v
+   ```bash
+   git remote -v
+   ```
 
-5. Traditionally, git used the name "master" for the main branch of
+2. Traditionally, git used the name "master" for the main branch of
    the work. However, this name is falling rapidly out of favor so we
    rename our branch to "main":
 
-        git branch -M main
+   ```bash
+   git branch -M main
+   ```
 
    (You only have to do this once.)
 
-5. **push** your local history to the remote repository:
 
-       git push --set-upstream origin main
+### <span class="label" style="background: black">Activity</span> Update (push) local content for the first time ###
 
-   You need to enter your username and password [^3].
+**push** your local history to the remote repository:
 
-   You only need the `--set-upstream origin main` (or `-u origin
-   main`) for the first time (it tells git which "branches" to
-   associate with each other in local and remote) [^4]. All further
-   push operations will then simply be
+{% highlight bash %}
+git push --set-upstream origin main
+{% endhighlight %}
 
-       git push
+Look at the web interface at
+https://github.com/USERNAME/PHY432 and see your changes
+appear.
 
-   Look at the web interface at
-   https://github.com/USERNAME/PHY432 and see your changes
-   appear.
+You only need the `--set-upstream origin main` (or `-u origin main`) for the
+first time (it tells git which "branches" to associate with each other in local
+and remote) [^4]. 
+
+### <span class="label" style="background: black">Activity</span> Update (push) local content ###
 
 For the rest of the semester, commit what you did during each class
 session to the `~/PHY432` repository on your laptop (and also push
 to your GitHub repository as a backup).
 
-**Note**: Your GitHub repository is for in-class work. Do not commit homeworks
+**Note**
+{: .label .float-left .bg-yellow-000 .text-grey-dk-300 }
+Your GitHub repository is for in-class work. Do not commit homeworks
 there; you will receive *private* repositories for the duration of the
 class for this purpose.
 
 
-## PHY432 Workflow: Resources and Workspace ##
+All further push operations will simply be
 
-Code, notebooks, and files are being made available on GitHub in the
-**resources** repository
-[{{ site.resources.name }}]({{ site.resources.url }}).
-For the rest of the semester it will be assumed that you have a
-`~/{{ site.resources.shortname }}` repository that you can update with a simple `git
-pull` as soon as new material is posted.
-
-If you have not done so already, set up `~/{{ site.resources.shortname }}`:
-
-{% highlight bash %}
-cd ~
-git clone {{ site.resources.giturl }}
-{% endhighlight %}
-
-You should also [have your own **workspace** repository `~/PHY432` set
-up](#activity-set-up-your-own-github-repositories).
- 
-### Overview ###
-
-When we start a new lesson you will typically go through the following steps to
-get code and data files.
-
-1. pull latest changes from {{ site.resources.shortname }}
-2. copy the new directories and files into your workspace PHY432
-3. work in your workspace
-4. commit changes in your workspace
-5. (optional) push changes in your workspace your GitHub repository
-
-### Update resources ("pull resources") ###
-
-Update when your instructor changed anything on the remote:
-
-{% highlight bash %}
-cd ~/{{ site.resources.shortname }}
-git pull
-{% endhighlight %}
-
-Check what's new
-{% highlight bash %}
-ls -lt
-{% endhighlight %}
-(newest at top)
-
-### Copy new files and directories to workspace ("copy resources") ###
-
-You should not be changing anything inside `~/{{ site.resources.shortname }}`
-(because the next `git pull` might try to change something that you
-did [^6]) but instead *copy* whatever you want to change to your own work
-directory.
-
-For example:
-
-{% highlight bash %}
-cp -r ~/{{ site.resources.shortname }}/00_setup ~/PHY432
-cd ~/PHY432/00_setup
-{% endhighlight %}
-
-
-{% comment %}
-For example, in the
-Fix as many bugs as possible! challenge you
-would copy all the `bugs_*.py` files to your own `~/PHY432` repo and
-work there:
-
-{% highlight bash %}
-cp -r ~/{{ site.resources.shortname }}/05_debugging ~/PHY432
-cd ~/PHY432/05_debugging
-{% endhighlight %}
-
-{% endcomment %}
-
-
-### Work, commit, push ###
-Then work on the files **in the workspace**.
-
-When you have changes that you want to track, `git add /
-commit / push`:
-{% highlight bash %}
-git add .
-git commit -m 'updated 00 setup files'
+```bash
 git push
-{% endhighlight %}
+```
+
+Try out the following
+1. update your `01_shell/hello.sh` script with a second line `echo "Good bye,
+   $USER"`.
+2. stage your changes 
+
+   ```bash
+   git add 01_shell/hello.sh
+   ```
+
+3. commit changes
+
+   ```bash
+   git commit -m 'add bye to hello script'
+   ```
+		
+4. push changes to remote repository
+
+   ```bash
+   git push
+   ```
+
+
+## Using git in PHY432 ##
+
+For the class we will use git and GitHub in multiple ways:
+
+- Homework assignments and Participation Activities will be provided as
+  repositories (using GitHub Classroom) and you will submit your work by
+  pushing your solutions to a remote repository.
+- Projects will be submitted to repositories.
+- Materials for the class will be made available in the **resources**
+  repository [{{ site.resources.name }}]({{ site.resources.url }}). 
+  
+  The notes on the [PHY432 workflow]({{ site.baseurl }}/{% link
+  modules/git/phy432_workflow.md %}) describe in more detail how you should use
+  the resources repository and your own `~/PHY432` workspace.
+- You should push your own work that you do during the class in your workspace
+  to [your own (private) PHY432
+  repository](#set-up-your-own-github-repositories).
+
 
 
 ## Contributing to Open Source on GitHub ##
@@ -683,7 +695,7 @@ enables you to easily contribute to other projects. This includes
      have to provide username and password for every push and which
      are also more secure. Namely one can use SSH keys instead of the
      HTTPS protocol, as described in the GitHub tutorial on
-     [Generating SSH keys](https://help.github.com/articles/generating-ssh-keys/).
+     [Generating SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
 [^4]:
 
@@ -699,29 +711,34 @@ enables you to easily contribute to other projects. This includes
     relevant. Conceptually, the staging area is different from the Git
     repository. See more in Git Pro under [Gettings Started – Git
 	Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics).
-	
-[^6]:
-
-    If you happen to have accidentally edited files inside
-    `~/{{ site.resources.shortname }}` you might run into *merge conflicts* when you
-    run `git pull` the next time. If that happens, copy *all files
-    that you edited* (use `git status` to see which ones are modified)
-    to a safe directory and then reset with the command
-
-        cd ~/{{ site.resources.shortname }}
-        # Next command only if you ran into a merge conflict
-        # during a 'git pull'
-        git merge --abort
-        
-        # undo ALL of YOUR changes
-        git reset --hard HEAD
-
-    **WARNING**: This will undo *all your changes* but will allow you to
-    just run the next `git pull` command again without problems.
- 
+	 
 [^7]:
 
     Other commonly used git repository hosters are
     [https://gitlab.com](https://gitlab.com) and
     [https://bitbucket.org/](https://bitbucket.org/).
     
+[^8]:
+
+    If you do not want to have to enter your username and password
+    every time you do a remote operation, you can also store username
+	and access token in the remote name. In the following, replace
+    *USERNAME* with your GitHub username and  *TOKEN* with
+    your personal access token
+   
+         git remote add origin https://USERNAME:TOKEN@github.com/USERNAME/PHY432.git
+
+    (*USERNAME* and *TOKEN* are separated by a colon "`:`" and
+	prefixed to the URL with the "at" "`@`" character.)
+	
+	If you want to replace your remote setting then use `set-url`:
+   
+         git remote set-url origin https://USERNAME:TOKEN@github.com/USERNAME/PHY432.git
+   
+    **WARNING** 
+	{: .label .bg-red-300 .float-left }
+	Note that storing your token in this way exposes it
+    to anyone who can get hold of your computer because it is stored
+    in clear text in the `.git` repository and is visible with `git
+    remote -v`.
+	{: .text-red-300 }
