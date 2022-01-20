@@ -7,3 +7,10 @@ Gemfile.lock
 _site/
 node_modules/
 vendor/
+*~
+.#*
+run_jekyll.sh
+_config-devel.yml
+Gemfile.local
+Gemfile.remote
+.DS_Store
