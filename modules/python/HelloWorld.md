@@ -120,22 +120,24 @@ For example, get help on the addition operator (and much more):
 Start `python` and figure out [^2] how to compute the left hand sides (the
 right hand sides are there for you to check your results):
 
+$$
 \begin{align}
--1 + 2 &= 1 \\\%
-102 - 201 &= -99 \\\%
-12345678987654321 \times 9876543210123456789 &= 121932631979881115785550983112635269\\\%
-3/2 &= 1.5\\\%
-\frac{1}{1 - 0.9^2} &= 5.263157894736843\\\%
+-1 + 2 &= 1 \\
+102 - 201 &= -99 \\
+12345678987654321 \times 9876543210123456789 &= 121932631979881115785550983112635269\\
+3/2 &= 1.5\\
+\frac{1}{1 - 0.9^2} &= 5.263157894736843\\
 1 + \frac{2}{1} + \frac{2^2}{1\cdot2} + \frac{2^3}{1\cdot2\cdot3} +
-\frac{2^4}{1 \cdot 2\cdot3\cdot4} &= 7.0\\\%
--3^4 &= -81\\\%
-2 - 5.5\times 10^{-7} &= 1.99999945\\\%
-1.672621898\times 10^{-27} \times (3\times10^8)^2 &= 1.5053597082 \times 10^{-10}\\\%
-\sqrt{2} &= 1.4142135623730951\\\%
-\sqrt{-1} &= i\\\%
-(1 + 2i) + (-2 + i) &= -1 + 3i\\\%
-\frac{1 + 2i}{2 - i} &= i\\\%
+\frac{2^4}{1 \cdot 2\cdot3\cdot4} &= 7.0\\
+-3^4 &= -81\\
+2 - 5.5\times 10^{-7} &= 1.99999945\\
+1.672621898\times 10^{-27} \times (3\times10^8)^2 &= 1.5053597082 \times 10^{-10}\\
+\sqrt{2} &= 1.4142135623730951\\
+\sqrt{-1} &= i\\
+(1 + 2i) + (-2 + i) &= -1 + 3i\\
+\frac{1 + 2i}{2 - i} &= i
 \end{align}
+$$
 
 ### More operations
 
