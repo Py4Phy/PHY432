@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: The Unix Shell
 nav_exclude: true
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Intermediate Shell Hacks (optional)
 nav_exclude: true
 ---

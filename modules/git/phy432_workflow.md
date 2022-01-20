@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  PHY432 git workflow
 nav_exclude: true
 ---

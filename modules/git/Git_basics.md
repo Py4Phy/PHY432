@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  Git Basics
 nav_exclude: true
 ---
