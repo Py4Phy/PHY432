@@ -4,6 +4,14 @@ title: Python
 nav_exclude: true
 ---
 
+![python logo](https://www.python.org/static/img/python-logo.png)
+{: .float-right }
+For this class, you should know [Python](https://www.python.org). In
+particular, you should know all about the basic building blocks and
+concepts of this programming language as summarized below. Each
+section has a link to a longer page (with exercises) that you can use
+for review.
+
 <details open markdown="block">
   <summary>
     Table of contents
