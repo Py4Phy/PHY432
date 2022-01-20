@@ -9,7 +9,7 @@ Jan 18
   : `git` SCM
 
 Jan 20
-: [Python](#)
+: [Python]({{ site.baseurl }}{% link modules/python/python.md %})
   : Python refresher, writing programs
   
   
