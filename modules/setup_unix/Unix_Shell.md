@@ -177,14 +177,14 @@ directory* `/home/dvader` [^0]:
 
 ~~~
 /home/dvader/
-	     Documents/
-		      deathstar/
-			       weaknesses.pdf
-			       electrical_bill.dat
-		      work/
-	     data/
-		      planets.dat
-		      bases
+         Documents/
+              deathstar/
+                   weaknesses.pdf
+                   electrical_bill.dat
+              work/
+         data/
+              planets.dat
+              bases
 ~~~
 
 When Mr Vader logs in he starts in his home directory, `/home/dvader`. He can
@@ -571,9 +571,9 @@ atom TODO
 * Create a file `~/PHY432/Documents/work/lesson.txt` with three
   lessons from today:
 
-	  1. computers are tools
-	  2. the shell is powerfull
-	  3. basic shell commands: pwd, cd, ls
+      1. computers are tools
+      2. the shell is powerfull
+      3. basic shell commands: pwd, cd, ls
 
 * save the file and check that it is there with
 
@@ -606,50 +606,69 @@ atom TODO
 Note: all these commands can also work on multiple filenames. <span class="label">Pro Tip!</span>
 
 
-#### Activity (homework) ####
+#### <span class="label" style="background: green">Homework</span> Activity  ####
 
-This is a more extended exercise in using various shell commands.
+This is a more extended exercise in using various shell commands. With
+the previous examples you should have a directory tree that looks like
+this:
+
+    PHY432/
+    └── 01_shell
+        ├── Documents
+        │   └── work
+        │       ├── TODO
+        │       └── lesson.txt
+        └── data
+
+
+Starting from this dirctory structure, perform the following file
+system manipulations:
 
 1. Make a backup (call it `TODO.bak`) of the TODO list with the `cp`
    command.
 2. Rename `TODO` to `TODO.txt` with the `mv` command.
 3. Make a directory `notes` under the `data` directory: You should now
    have a directory tree similar to
+   
+        PHY432/
+        └── 01_shell
+            ├── Documents
+            │   └── work
+            │       ├── TODO.bak
+            │       ├── TODO.txt
+            │       └── lesson.txt
+            └── data
+                └── notes
 
-        ~/PHY432/01_shell/
-                          Documents/
-                                    work/
-                                         TODO.txt
-                                         TODO.bak
-                          data/
-                              notes/
-
-   Check with `ls -R ~/PHY432`.
+   Check with `ls -R ~/PHY432` (or `tree ~/PHY432`)
 4. Put a copy of `TODO.txt` into the `notes` directory (using `cp`).
 5. Create a new text file `data/notes/hints.txt` and write any
    [hints](https://en.wikipedia.org/wiki/Ice_planet)  for possible
    rebel bases into this file.
-6. Open `TODO.txt` in `atom` and add a note to item 1 too look in the
-   hints.txt file. Save and exit.
-7. Make a copy of your `notes` directory in your work directory:
-
-        ~/PHY432/01_shell/
-                          Documents/
-                                    work/
-                                         TODO.txt
-                                         TODO.bak
-                                         notes/
-                                              TODO.txt
-                                              hints.txt
-                          data/
-                              notes/
-                                    TODO.txt
-                                    hints.txt
+6. Open `notes/TODO.txt` in `atom` and add a note to item 1 too look in the
+   `hints.txt` file. Save and exit.
+7. Make a copy of your `notes` directory in your work directory. Your
+   tree should now look like this:
+   
+        PHY432/
+        └── 01_shell
+            ├── Documents
+            │   └── work
+            │       ├── TODO.bak
+            │       ├── TODO.txt
+            │       ├── lesson.txt
+            │       └── notes
+            │           ├── TODO.txt
+            │           └── hints.txt
+            └── data
+                └── notes
+                    ├── TODO.txt
+                    └── hints.txt
 
 8. Remove `data/notes/hints.txt` with `rm`.
-9. Remove `data/notes` with `rmdir`. (Hint: Read the error message!)
-10. Move `work/notes/hints.txt` into the `work` directory.
-11. Remove the useless `work/notes` directory with `rm -r` (careful !)
+9. Remove `data/notes` with `rmdir`. [^5]
+10. Move `Documents/work/notes/hints.txt` into the `work` directory.
+11. Remove the useless `Documents/work/notes` directory with `rm -r` (careful !)
 
 
 ## Credits
@@ -664,24 +683,24 @@ Shell](https://swcarpentry.github.io/shell-novice/).
 
 ------------------------------------------------------------
 
-##### Footnotes #####
+## Footnotes ##
 
 [^0]:
 
     You can also see if you have the [`tree`](https://manpages.debian.org/stretch/tree/tree.1.en.html) command installed, which
-	shows you beautiful directory trees:
-	
-	    $ tree ~dvader
-		/home/dvader/
-		├── Documents
-		│   ├── deathstar
-		│   │   ├── electrical_bill.dat
-		│   │   └── weaknesses.txt
-		│   └── work
-		└── data
-			├── bases
-			└── planets.dat
-    			
+    shows you beautiful directory trees:
+    
+        $ tree ~dvader
+        /home/dvader/
+        ├── Documents
+        │   ├── deathstar
+        │   │   ├── electrical_bill.dat
+        │   │   └── weaknesses.txt
+        │   └── work
+        └── data
+            ├── bases
+            └── planets.dat
+                
     `tree` is typically *not* included with git-bash.
 
 
@@ -706,12 +725,18 @@ Shell](https://swcarpentry.github.io/shell-novice/).
         cd 
         curl {{ site.url }}{{ site.baseurl }}/{{ site.siteresources }}/nanoconfig.zip -O unzip nanoconfig.zip
 
-	This should create the file `~/.nanorc` (which you can edit to
-	customize further) and the directory `~/.nano`.
+    This should create the file `~/.nanorc` (which you can edit to
+    customize further) and the directory `~/.nano`.
 
 
 [^4]:
 
     If you cannot start `atom` from the commandline, go back to
-	[Setting up the Environment: Testing: editor (atom)]({{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
+    [Setting up the Environment: Testing: editor (atom)]({{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
     the steps described there.
+
+[^5]:
+
+    Or rather, *attempt* to remove the directory. This command *should
+    fail* for this exercise. If you wanted to really remove the
+    directory, which command would you need to use? 
