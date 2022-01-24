@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Functions
+parent: Python
 nav_exclude: true
 ---
 

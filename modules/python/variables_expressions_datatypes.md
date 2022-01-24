@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Python — Variables, Expressions, and Python data types
+parent: Python
 nav_exclude: true
 ---
 

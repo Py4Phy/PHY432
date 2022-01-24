@@ -1,6 +1,7 @@
 ---
 layout: default
 title: The first Python program
+parent: Python
 nav_exclude: true
 ---
 
