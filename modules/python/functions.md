@@ -20,7 +20,7 @@ less) that do something specific, consider making it a function.
 
 
 We are continuing from
-[the previous lesson]({{ site.baseurl }}/{% link modules/python/flowcontrol.md %}) in the "work directory"
+[the previous lesson]({{ site.baseurl }}{% link modules/python/flowcontrol.md %}) in the "work directory"
 `~/PHY432/03_python`. We will use `ipython` and your text editor.
 
 
