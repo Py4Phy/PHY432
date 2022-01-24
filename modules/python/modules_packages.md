@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Modules and Packages
-parent: Modularization in Python
-grandparent: Python
+parent: Python
 nav_exclude: true
 ---
 

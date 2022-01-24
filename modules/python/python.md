@@ -96,3 +96,12 @@ See [Functions]({{ site.baseurl }}{% link modules/python/functions.md
   * keyword arguments (with default values)
 * *calling* a function `value = f(...)` 
 
+## Modules and Packages
+
+See [Modules and Packages]({{ site.baseurl }}{% link modules/python/modules_packages.md
+%}) to review.
+
+## Objects
+
+See [Objects]({{ site.baseurl }}{% link modules/python/objects.md
+%}) to review.

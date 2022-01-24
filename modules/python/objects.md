@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Objects
-parent: Modularization in Python
-grandparent: Python
+parent: Python
 nav_exclude: true
 ---
 

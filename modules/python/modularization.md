@@ -2,7 +2,6 @@
 layout: default
 title: Modularization in Python
 parent: Python
-has_children: true
 nav_exclude: true
 ---
 
