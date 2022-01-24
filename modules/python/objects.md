@@ -132,7 +132,7 @@ Given the sentence `"MAY THE FORCE BE WITH YOU!"`
 2. make it lower case
 
 
-#### Lists
+### Lists
 The [`list`](https://docs.python.org/3/library/stdtypes.html#lists)
 type contains a [large number of useful
 methods](https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types)
