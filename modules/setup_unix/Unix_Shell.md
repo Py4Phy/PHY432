@@ -356,10 +356,10 @@ ls /usr/bin/*oo*
 
 
 **Warning**
-{: .label .label-red .float-left }
+{: .label .label-red .d-inline }
 DO NOT COPY AND PASTE ANY COMMAND LINE CONTAINING `rm`
 WITHOUT THINKING *TWICE* ABOUT IT. You have been warned.
-{: .text-red-300 }
+{: .text-red-300 .d-inline }
 
 Delete all jpg images in directories from the last century
 
@@ -412,9 +412,9 @@ bash: cd: bogus: No such file or directory
 ~~~~~
 
 **Warning**
-{: .label .label-red .float-left }
+{: .label .label-red .d-inline }
 **Always read error messages!**
-{: .text-red-300 .m-1}
+{: .text-red-300 .d-inline }
 
 
 ### <span class="label" style="background: black">Activity</span> Explore your file system  ###
@@ -592,18 +592,24 @@ atom TODO
 * `rm` (remove file, `rm -r` remove recursively (**dangerous!**))
 
   **WARNING**
-  {: .label .label-red .float-left }
+  {: .label .label-red .d-inline }
   There is no "Trashcan" or built in backup. Once you `rm`
   something, it is gone. Be especially careful with `rm -r`.
-  {: .text-red-300 }
+  {: .text-red-300 .d-inline }
 
+  `rm` also has the force (`-f`) option to ignore any safe guards such
+  as permission settings that would otherwise not let you write to or
+  delete a file.
 
   **WARNING**
-  {: .label .label-red .float-left }
-  Do not execute `rm -rf *`. It will erase everything permanently.
-  {: .text-red-300 }
+  {: .label .label-red .d-inline }
+  Do not execute `rm -rf *`. It will erase *everything* permanently.
+  {: .text-red-300 .d-inline}
 
-Note: all these commands can also work on multiple filenames. <span class="label">Pro Tip!</span>
+Pro Tip
+{: .label .label-inline }
+All these commands can also work on multiple filenames.
+{: .d-inline }
 
 
 #### <span class="label" style="background: green">Homework</span> Activity  ####

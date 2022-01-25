@@ -119,8 +119,13 @@ print(answer)
 {% endhighlight %}
 shows `42`
 
-Note: In interactive work, you can also just type the variable name to
+Pro Tip
+{: .label .d-inline }
+
+In interactive work, you can also just type the variable name to
 see its content:
+{: .d-inline }
+
 {% highlight python %}
 In [1]: answer = 42
 
@@ -299,7 +304,11 @@ Arbitrary elements
 temperatures[3]
 {% endhighlight %}
 
-**Note**: Python indices are **0-based**. 
+Note
+{: .label .label-yellow .d-inline }
+
+Python indices are **0-based**. 
+{: .d-inline }
 
 For example, the *third* element is at index *2*:
 {% highlight python %}
