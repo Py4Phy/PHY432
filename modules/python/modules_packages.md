@@ -250,6 +250,8 @@ from . import math        # import our own math.py here!
 ```
 
 In packages one can use `.` (current directory) and `..` (parent
-directory) for *relative imports* to make sure one does not import
-global packages. However, shell-like "paths" do not work and
-<strike><code>from ../.. import something</code></strike> will fail.
+directory) for [*relative
+imports*](https://docs.python.org/3/tutorial/modules.html#intra-package-references)
+to make sure one does not import global packages. However, shell-like
+"paths" do not work and <strike><code>from ../.. import
+something</code></strike> will fail.
