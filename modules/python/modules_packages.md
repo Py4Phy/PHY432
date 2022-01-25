@@ -55,7 +55,7 @@ MODULE_NAME.var_name          # value of variable var_name
 
 
 
-## <span class="label" style="background: gray">Exercise</span> A module for constants
+## <span class="label" style="background: black">Activity</span> A module for constants
 
 ### Create `constants.py`
 
@@ -99,7 +99,7 @@ import constants as c
 hbar = c.h / (2*c.pi)
 {% endhighlight %}
 
-## <span class="label" style="background: gray">Exercise</span>  Import and use your `myfuncs` module
+## <span class="label" style="background: black">Activity</span>  Import and use your `myfuncs` module
 
 In the previous lesson you created [myfuncs.py]({{ site.baseurl }}{%
 link modules/python/functions.md %}#exercise-create-functions), which
@@ -151,7 +151,7 @@ Other packages that we are going to use
 * [matplotlib](https://matplotlib.org/)
 * [scipy](https://www.scipy.org/scipylib/index.html)
 
-### <span class="label" style="background: gray">Exercise</span> Explore the Standard Library
+### <span class="label" style="background: black">Activity</span> Explore the Standard Library
 
 Import the *[math](https://docs.python.org/3/library/math.html)*
 module and the *[os](https://docs.python.org/3/library/os.html)*
@@ -200,11 +200,16 @@ solve the following problems:
 A Python
 [**package**](https://docs.python.org/3/tutorial/modules.html#packages)
 is a collection of modules that are distributed
-together. A package modularizes packages. Modules in a package are
-also accessed with the dot operator.
+together. 
+* A package modularizes modules. 
+* Modules in a package are also accessed with the dot operator.
+* Packages become important when working on larger projects. Many
+  external Python libraries are distributed as packages.
 
 For example, in a hypothetical package `physics` we might have a
-module `constants` and a module `math`. We can access constants with
+module `physics.constants` and a module `physics.math`. We can access
+variables in `physics.constants` after importing the `physics` package
+as usual:
 ```python
 import physics    # our package
 import math       # standard library
@@ -212,10 +217,11 @@ import math       # standard library
 hbar = physics.constants.PlanckConstant / (2*math.pi)
 ```
 Note 
-{: .label .label-yellow .float-left }
+{: .label .label-yellow .d-inline }
 In this example, the standard `math` module does *not* overwrite (or "shadow") the
 `physics.math` module (or *vice versa*): they live in different namespaces. *Packages
-organize modules* in so that name collisions are avoided.
+organize modules* so that name collisions are avoided.
+{: .d-inline }
 
 
 All module files are contained in a single directory and the directory
@@ -233,5 +239,17 @@ The example `physics` package would contain the following files
 	└── math.py
 
 and submodules would be accessed as `physics.constants` or
-`physics.math`. Anything defined in `__init__.py` would be accessible
-from `physics` directly.
+`physics.math`. 
+
+Anything defined in `__init__.py` would be accessible
+from `physics` directly, e.g., it might contain
+```python
+# physics __init__.py
+from . import constants
+from . import math        # import our own math.py here!
+```
+
+In packages one can use `.` (current directory) and `..` (parent
+directory) for *relative imports* to make sure one does not import
+global packages. However, shell-like "paths" do not work and
+<strike><code>from ../.. import something</code></strike> will fail.
