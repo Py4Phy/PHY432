@@ -41,8 +41,10 @@ operate on the data in the object.
 Python is an *object oriented* (OO) language and objects are
 everywhere --- in fact *everything* is an object in Python so anything
 you lear about objects applies to everything in Python.
+{: .d-inline }
 Pro Tip
-{: .label}
+{: .label .d-inline}
+
 
 Key terms for OOP in Python:
 
@@ -113,11 +115,13 @@ easily concatenate or "chain" methods:
 
 
 
+Pro Tip
+{: .label .d-inline}
+
 If you are curious about other methods of an object such as the string
 `sentences`, use the `TAB`-completion in `ipython` on the object with
 a following period `.`:
-Pro Tip
-{: .label }
+{: .d-inline}
 
 {% highlight python %}
 sentence.<TAB>
@@ -209,6 +213,89 @@ the data in the list.
 
 In Python one creates an object by first defining a
 [class](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes):[^2]
+```python
+class ClassName:
+   """Doc string for the class"""
+   
+   def __init__(self, a, b, c, d=1, e=None):
+      """(optional) initialization method"""
+      self.a = float(a)    # set attributes
+      self.b = str(b)
+      ...
+      
+   def method1(self, x):
+      """(optional) method with argument x"""
+      y = x * self.a
+      return y
+      
+   def method2(self):
+      """(optional) method with no arguments"""
+      ...
+    
+``` 
+
+* The code block of the `class` definition contains "function"
+  definitions that define the **methods** of the class.
+* The first argument of each method is special and is called `self` by
+  convention. It is used by Python and is used to *refer to the object
+  itself*. 
+  
+  Note
+  {: .label .label-yellow}
+  When calling a method, *do not supply `self`*, only supply
+  the other arguments!
+  {: .d-inline }
+  
+  Methods can return values with the `return` statement. If the
+  `return` statement is ommitted they will still return `None` but
+  presumably the method is doing something else such as changing the
+  state of the instance or performing I/O.
+* **attributes** are variables of `self` that are accessed with the
+  dot operator, e.g., `self.a`.
+* The `__init__()` method is special and is used to *initialize* the
+  instance. One can execute code and set attributes. `__init__()` does
+  **not** have a `return` statement.
+  
+The `class` statement defines a new type of object (short: "a new
+  type").
+  
+To create an **instance of a class** (a useable object of the type
+ClassName in our example) one must **instantiate** it:
+```python
+thingy = ClassName(2.5, "PHY432", ["towel", "babelfish"], d=3.1415e24)
+```
+
+To **access an attribute**, use the dot operator:
+```python
+>>> print(thingy.a)
+2.5
+```
+will print the value of the attribute `a`, which was set in
+`__init__()`.
+
+To **call a method**, use the dot operator to access the method and
+provide the appropriate arguments (do *not* include a value for `self`
+as this is provide by Python!):
+```python
+>>> result = thingy.method1(2)
+>>> print(result)
+5.0
+```
+
+If a method does not have user arguments such as `method2()` then it
+would be called without arguments:
+```python
+>>> thingy.method()
+```
+
+
+
+
+
+### <span class="label" style="background: black">Activity</span> Our own Sphere object
+
+As an example we will create a module `bodies` with a class `Sphere`
+for spherical bodies.
 
 {% highlight python %}
 import math
@@ -254,7 +341,7 @@ In [3]: type(ball)
 Out[3]: __main__.Sphere
 {% endhighlight %}
 
-## Attributes and Methods
+## <span class="label" style="background: black">Activity</span> Attributes and Methods
 
 Objects contain **attributes** (variables that are associated with the
 object) and **methods** (functions that are associated with the
@@ -308,7 +395,7 @@ Out[10]: (0, 0, 0)
 Note that this method did not return any values but it changed the
 data in `Sphere.pos`.
 
-## Independence of instances
+## <span class="label" style="background: black">Activity</span> Independence of instances
 
 Each instance of a class is independent from the other instances. For
 example, `ball` and a new `balloon` can be moved independently
@@ -332,6 +419,8 @@ New classes can be built on existing classes in such a way that the
 new class contains the functionality of the existing class. This is
 called *inheritance* and is a very powerful way to organize large code
 bases.
+
+### <span class="label" style="background: black">Activity</span> Deriving a Planet from a Sphere
 
 Only a small example is given to illustrate the basic idea: We use our
 `Sphere` class to create planets. A planet is (almost) a sphere but it
@@ -417,7 +506,7 @@ and objects.
 [^1]:
 
     ... because [modules]({{ site.baseurl }}{% link
-	modules/python/modules_packages.md %}) are objects!
+    modules/python/modules_packages.md %}) are objects!
 
 [^2]:
 
