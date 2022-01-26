@@ -171,7 +171,8 @@ solve the following problems:
    \\[
         \Phi(x, µ, σ) = \frac{1}{2} \left[1 + \mathrm{erf}\left(\frac{x-µ}{σ \sqrt{2}}\right)\right]
    \\]
-   as a Python function `Phi(x, mu=0., sigma=1.0)`.
+   as a Python function `Phi(x, mu=0., sigma=1.0)`. Look for the right
+   [special function in the `math` module](https://docs.python.org/3/library/math.html#special-functions).
    
    For a random variable $$X$$ that is normally distributed with mean
    µ=88.6 and standard deviation σ=6.3 compute the probability
@@ -185,13 +186,19 @@ solve the following problems:
    ```
 
 
-3. Get the current working directory as a string and assign to the
+3. Get the *current working directory* as a string and assign to the
    variable `cwd` and print it with
    ```python
    print(f"cwd = '{cwd}'")
    ```
-
-
+   Hint
+   {: .label .label-yellow .d-inline}
+   Look through the [available functions in `os` for Process
+   Parameters](https://docs.python.org/3/library/os.html#process-parameters)
+   for something that could *get* you the *cwd*... You can also use
+   the TAB-completion trick `os.<TAB><TAB>` in `ipython` to see what's
+   available.
+   {: .d-inline}
 
 
 
