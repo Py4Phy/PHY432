@@ -331,8 +331,12 @@ class Sphere:
        self.pos = tuple(xi + ti for xi, ti in zip(self.pos, t))
 {% endhighlight %}
 
-and then *instantiating* the object (creating an instance of the class)
+Because we created our own module, we first have to import our class
+{% highlight python %}
+from bodies import Sphere
+{% endhighlight %}
 
+We then *instantiate* the object (creating an instance of the class)
 {% highlight python %}
 ball = Sphere((0, 0, 10), radius=2)
 {% endhighlight %}
