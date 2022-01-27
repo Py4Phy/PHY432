@@ -38,6 +38,10 @@ object contains data (held in variables that are called *attributes*)
 and it also contains functions (called *methods*) that know how to
 operate on the data in the object.
 
+![Left: functions and data. Right: objects bundle data with
+functions]({{ site.baseurl }}{% link assets/figs/object_principle.png %})
+{: .float-right }
+
 Python is an *object oriented* (OO) language and objects are
 everywhere --- in fact *everything* is an object in Python so anything
 you lear about objects applies to everything in Python.

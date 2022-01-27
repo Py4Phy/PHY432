@@ -30,7 +30,7 @@ to interact with it, adjust it, tweak it, fix it, and generally make
 it do things that it has never done before.
 
 ![CLI and GUI provide access to the operating system.]({{ site.baseurl
-}}/{{ site.figs }}/os_shell_organization.png)
+}}{% link assets/figs/os_shell_organization.png %})
 {: .float-right }
 
 You are probably used to interacting with a computer via a graphical
