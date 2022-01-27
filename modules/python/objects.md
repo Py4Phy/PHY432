@@ -44,7 +44,7 @@ functions]({{ site.baseurl }}{% link assets/figs/object_principle.png %})
 
 Python is an *object oriented* (OO) language and objects are
 everywhere --- in fact *everything* is an object in Python so anything
-you lear about objects applies to everything in Python.
+you learn about objects applies to everything in Python.
 {: .d-inline }
 Pro Tip
 {: .label .d-inline }
@@ -59,8 +59,11 @@ Key terms for OOP in Python:
 - **method**: a "function" associated with an object, e.g., `obj.func(...)`
 - Attributes and methods are accessed with the **dot operation** (like
   the content of modules [^1])
-- An object is an **instance** of a **class**, which means that
-  objects are created from a [`class` definition](https://docs.python.org/3/tutorial/classes.html#class-definition-syntax).
+- In Python one can create an object as an **instance** of a  **class**;
+  the [`class`
+  definition](https://docs.python.org/3/tutorial/classes.html#class-definition-syntax)
+  describes the contents of the object and *instantiation* ("calling"
+  the class) creates an instance.
 
 
 ## Some Python objects
@@ -347,7 +350,7 @@ Out[3]: __main__.Sphere
 
 ## <span class="label" style="background: black">Activity</span> Attributes and Methods
 
-Objects contain **attributes** (variables that are associated with the
+Objects contain data **attributes** (variables that are associated with the
 object) and **methods** (functions that are associated with the
 object). Attributes and methods are accessed with the "dot"
 operator. (Within the *class definition*, attributes and methods are
