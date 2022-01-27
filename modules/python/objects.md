@@ -47,7 +47,7 @@ everywhere --- in fact *everything* is an object in Python so anything
 you lear about objects applies to everything in Python.
 {: .d-inline }
 Pro Tip
-{: .label .d-inline}
+{: .label .d-inline }
 
 
 Key terms for OOP in Python:
@@ -485,13 +485,13 @@ objects and therefore you are using the dot operator to access its
 contents.
 
 Pro Tip
-{: .label }
+{: .label .d-inline }
 In `ipython` you can list all the attributes and methods of
 an object by typing the object's name, a dot, and then hitting the TAB
 key twice. TAB-completion together with the question mark (help)
 operator is how most programmers quickly learn about Python classes
 and objects.
-
+{: .d-inline }
 
 ------------------------------------------------------------
 
