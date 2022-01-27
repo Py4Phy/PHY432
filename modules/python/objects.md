@@ -65,6 +65,10 @@ Key terms for OOP in Python:
   describes the contents of the object and *instantiation* ("calling"
   the class) creates an instance.
 
+  An **instance** is the object that you will work with. There can be
+  multiple independent instances of the same class. (Think of the
+  class definition as the blue print or template and the instance as
+  the actual built thingy.)
 
 ## Some Python objects
 Even if you don't use object-oriented programming, you still need to
@@ -244,6 +248,11 @@ class ClassName:
 
 * The code block of the `class` definition contains "function"
   definitions that define the **methods** of the class.
+  
+  Any data **attributes** can be set inside methods and they can be
+  initialized in the special `__init__()` method that is called on
+  instantiation.
+* **Methods** are accessed with the dot operation.
 * The first argument of each method is special and is called `self` by
   convention. It is used by Python and is used to *refer to the object
   itself*. 
@@ -258,7 +267,7 @@ class ClassName:
   `return` statement is ommitted they will still return `None` but
   presumably the method is doing something else such as changing the
   state of the instance or performing I/O.
-* **attributes** are variables of `self` that are accessed with the
+* Data **attributes** are variables of `self` that are accessed with the
   dot operator, e.g., `self.a`.
 * The `__init__()` method is special and is used to *initialize* the
   instance. One can execute code and set attributes. `__init__()` does
