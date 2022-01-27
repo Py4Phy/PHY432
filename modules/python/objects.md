@@ -127,11 +127,12 @@ Pro Tip
 
 If you are curious about other methods of an object such as the string
 `sentences`, use the `TAB`-completion in `ipython` on the object with
-a following period `.`:
+a following period `.` where hitting the `<TAB>` key twice will bring
+up the menu of all options:
 {: .d-inline}
 
 {% highlight python %}
-sentence.<TAB>
+sentence.<TAB><TAB>
 {% endhighlight %}
 
 This will show you all methods and attributes.
