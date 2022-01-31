@@ -12,7 +12,7 @@ In Week 4 we will learn about two fundamental Python packages for
 * [matplotlib](https://matplotlib.org/), a comprehensive library for
   creating static, animated, and interactive visualizations in Python.
 
-![NumPy](https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg)
+![NumPy](https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.svg)
 
 We will use **NumPy** arrays as the basic data structure for most of our
 algorithms and applications, simply because most of Physics can be
