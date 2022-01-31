@@ -118,7 +118,7 @@ resources:
  name:               Py4Phy/PHY432-resources
  shortname:          PHY432-resources
  url:                https://github.com/Py4Phy/PHY432-resources
- fileurl:            https://github.com/Py4Phy/PHY432-resources/blob/master 
+ fileurl:            https://github.com/Py4Phy/PHY432-resources/blob/main 
  giturl:             https://github.com/Py4Phy/PHY432-resources.git
 
 org:
@@ -133,5 +133,5 @@ wiki:
 
 nbviewer:
    show:             https://nbviewer.jupyter.org/github
-   resources:        https://nbviewer.jupyter.org/github/Py4Phy/PHY432-resources/blob/master
-   slides:           https://nbviewer.jupyter.org/format/slides/github/Py4Phy/PHY432-resources/blob/master
+   resources:        https://nbviewer.jupyter.org/github/Py4Phy/PHY432-resources/blob/main
+   slides:           https://nbviewer.jupyter.org/format/slides/github/Py4Phy/PHY432-resources/blob/main
