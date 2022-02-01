@@ -141,8 +141,7 @@ numpy.
 ## Class material
 
 The class will be presented in a Jupyter notebook,
-[06-stochastic_dynamics.ipynb]({{ site.nbviewer.resources
-}}/06_numpy/06-stochastic_dynamics.ipynb).
+[06-stochastic_dynamics.ipynb]({{ site.nbviewer.resources }}/06_numpy/06-stochastic_dynamics.ipynb).
 
 You can load the notebook yourself. Update your local
 [PHY432-resources repository]({{ site.resources.url }})[^1]
