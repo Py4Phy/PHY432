@@ -21,7 +21,9 @@ notebook is available as
   in *Python Data Science Handbook*, Jake VanderPlas, O'Reilly Media (2016)
 * Nicolas P. Rougier, [Scientific Visualization: Python +
   Matplotlib](https://www.labri.fr/perso/nrougier/scientific-visualization.html), AFNIL
-  (2021) ([PDF](https://hal.inria.fr/hal-03427242/document))
+  (2021) ([PDF
+  (GitHub)](https://github.com/rougier/scientific-visualization-book/raw/master/pdf/book.pdf),
+  [PDF (HAL)](https://hal.inria.fr/hal-03427242/document))
 
 
 
