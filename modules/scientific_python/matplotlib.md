@@ -14,5 +14,14 @@ notebook is available as
 [06-intro-matplotlib.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-matplotlib.ipynb)
 
 
+## Resources
+
+* Jake VanderPlas, [Visualization with
+  Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html),
+  in *Python Data Science Handbook*, Jake VanderPlas, O'Reilly Media (2016)
+* Nicolas P. Rougier, [Scientific Visualization: Python +
+  Matplotlib](https://www.labri.fr/perso/nrougier/scientific-visualization.html), AFNIL
+  (2021) ([PDF](https://hal.inria.fr/hal-03427242/document))
+
 
 
