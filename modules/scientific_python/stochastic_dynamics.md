@@ -127,7 +127,7 @@ hop to the left or right with equal probability. How far from the
 origin will it have moved after time _t_, expressed as the distance
 \\(d(t)\\)? Image Source: _SciPy Lectures 1.3.2 NumPy: Numerical
 operations on arrays: Reductions_ by Emmanuelle Gouillart, Didrik
-Pinte, GaÃ«l Varoquaux, and Pauli Virtanen.</small>
+Pinte, Gaël Varoquaux, and Pauli Virtanen.</small>
 
 The random walk also leads to a diffusion process with an equivalent
 diffusion coefficient if one associates an average time with each
