@@ -34,6 +34,23 @@ The class will be presented in a Jupyter notebook. The annotated
 notebook is
 [07-numbers.ipynb]({{ site.nbviewer.resources }}/07_numbers/07-numbers.ipynb).
 
+## <span class="label" style="background: black">Activity</span> Sine series
+
+As an example for how to approximate the \\(sin(x)\\) function we develop
+a simple algorithm based on the series expansion 
+
+$$
+\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \dots
+$$
+
+How many terms should be included? One possibility is to not include
+more terms when the change in the result is below machine
+precision. We will analyze the error in our implementation and think
+about ways to decrease it.
+
+Follow the link provided on Canvas to set up your repository.[^5]
+
+
 
 ## Additional resources
 
@@ -86,3 +103,10 @@ notebook is
      [Perils_of_Floating_Point.ipynb]({{site.nbviewer.resources}}/07_numbers/Perils_of_Floating_Point.ipynb)
      based on that article.
 
+[^5]:
+
+     The problem can be found in the public repository [{{ site.org.url
+     }}/Activity_05_numbers_sine_series]({{ site.org.url
+     }}/Activity_05_numbers_sine_series) — you are welcome to fork it
+	 and work on it: as soon as you push your work to GitHub, the
+	 autograder will run for you.
