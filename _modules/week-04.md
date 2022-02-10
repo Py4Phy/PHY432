@@ -14,6 +14,13 @@ Jan 31
 Feb 2
 : [matplotlib]({{ site.baseurl }}{% link modules/scientific_python/matplotlib.md %})
   : `matplotlib` package for 2D and 3D plotting
-: [stochastic dynamics example]({{ site.baseurl }}{% link
+: [random numbers]({{ site.baseurl }}{% link
   modules/scientific_python/stochastic_dynamics.md %})
-  : `numpy` and `matplotlib` in action: simulating and analyzing stochastic dynamics with a random walk
+  : `numpy` and `matplotlib` in action: simulating Brownian motion with
+    random numbers
+
+Feb 8
+: [stochastic dynamics]({{ site.baseurl }}{% link
+  modules/scientific_python/stochastic_dynamics.md %})
+  : `numpy` and `matplotlib` in action: analyzing ensembles of
+    stochastic trajectories
