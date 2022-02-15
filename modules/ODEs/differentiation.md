@@ -18,6 +18,14 @@ derivative and assess their error.
 You can follow the lecture in the slides
 [09-differentiation-theory.ipynb]({{ site.nbviewer.slides }}/09_differentiation/09-differentiation-theory.ipynb).
 
+### <span class="label" style="background: black">Activity</span>Error analysis of differentiation algorithms
+
+In this activity you will implement different finite difference
+algorithms for numerical differentiation. You will then analyze how
+the algorithmic [error]({{ site.baseurl }}{% link
+modules/fundamentals/errors.md %}) depends on the spacing $$dt$$ that you use
+to evaluate the derivative. As you will see, there is a point when
+numerical (floating point representation) errors limit the achievable accuracy.
 
 
 ## Additional resources
