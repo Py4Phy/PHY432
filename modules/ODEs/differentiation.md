@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Differentiation
+parent: Ordinary Differential Equations
 nav_exclude: true
 ---
 
