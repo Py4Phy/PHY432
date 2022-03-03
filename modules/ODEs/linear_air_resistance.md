@@ -17,7 +17,7 @@ For the problem that you should solve during the class, get the
 notebook[^1]
 [11-ODE-lineardrag-students.ipynb]({{ site.nbviewer.resources }}/11_ODE_applications/11-ODE-lineardrag-students.ipynb)
 and see notebook
-[11-ODE-lineardrag.ipynb]({{ site.nbviewer.resources }}/11_ODE_applications/12-ODE-lineardrag.ipynb)
+[11-ODE-lineardrag.ipynb]({{ site.nbviewer.resources }}/11_ODE_applications/11-ODE-lineardrag.ipynb)
 for the full solution.[^2]
 
 
