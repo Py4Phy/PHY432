@@ -103,7 +103,6 @@ code:                "assets/code"
 figs:                "assets/figs"
 images:              "assets/images"
 movies:              "assets/movies"
-lectures:            "assets/lectures"
 docs:                "assets/docs"
 siteresources:       "assets/resources"
 
