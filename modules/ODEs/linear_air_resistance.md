@@ -20,7 +20,13 @@ and see notebook
 [11-ODE-lineardrag.ipynb]({{ site.nbviewer.resources }}/11_ODE_applications/11-ODE-lineardrag.ipynb)
 for the full solution.[^2]
 
-
+![trajectories of object launched at different angles with linear air
+resistance]({{ site.baseurl }}{% link
+assets/figs/launch_linear_air_resistance.svg %})
+<p>
+<small>Trajectories of a small object launched at different angles,
+under linear air resistance.</small>
+</p>
 
 ## Resources ##
 
