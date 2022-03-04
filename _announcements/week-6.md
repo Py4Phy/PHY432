@@ -1,5 +1,5 @@
 ---
-title: Week 6 Announcement
+title: Week 6 & 7 Announcement
 week: 6
 date: 2022-02-14
 ---
