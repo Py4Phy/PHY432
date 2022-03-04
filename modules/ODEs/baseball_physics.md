@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Projectile with linear air resistance"
+title: Baseball physics
 parent: Ordinary Differential Equations
 nav_exclude: true
 ---
@@ -8,15 +8,16 @@ nav_exclude: true
 After implementing a number of
 [integrators for ODEs]({{ site.baseurl }}{% link modules/ODEs/integrators.md %}) we are now in the position to solve some practical problems:
 
-- projectile movement with air resistance
-- realistic movement of a spinning baseball
+- [movement with air resistance]({{ site.baseurl }}{% link
+  modules/ODEs/linear_air_resistance.md %})
+- realistic movement of a spinning baseball (this lesson)
 
 
-### Baseball physics
+## Baseball physics
 
 The major forces acting on a flying baseball are drag (friction due to
-air resistance) (see also [12-ODE-baseball.ipynb]({{
-site.nbviewer.resources }}/12_ODE_applications/12-ODE-baseball.ipynb)):
+air resistance) (see also [11-ODE-baseball.ipynb]({{
+site.nbviewer.resources }}/11_ODE_applications/11-ODE-baseball.ipynb)):
 
 $$
 \mathbf{F}_2 = -b_2 v \mathbf{v}
@@ -62,7 +63,7 @@ $$
 The **equations of motions** are then
 
 \begin{align}
-\frac{d\mathbf{r}}{dt} &= \mathbf{v}\\\%
+\frac{d\mathbf{r}}{dt} &= \mathbf{v}\\\\\\
 \frac{d\mathbf{v}}{dt} &= -g \hat{\mathbf{e}}_y \mathbf{v} -\frac{b_2}{m} v \mathbf{v} + \alpha\ \boldsymbol{\omega} \times \mathbf{v}
 \end{align}
 
