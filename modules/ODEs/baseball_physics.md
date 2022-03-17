@@ -64,7 +64,7 @@ The **equations of motions** are then
 
 \begin{align}
 \frac{d\mathbf{r}}{dt} &= \mathbf{v}\\\\\\
-\frac{d\mathbf{v}}{dt} &= -g \hat{\mathbf{e}}_y -\frac{b_2}{m} v \mathbf{v} + \alpha\ \boldsymbol{\omega} \times \mathbf{v}
+\frac{d\mathbf{v}}{dt} &= -g \hat{\mathbf{e}}_y -\frac{b_2}{m} v \mathbf{v} + \frac{\alpha}{m}\ \boldsymbol{\omega} \times \mathbf{v}
 \end{align}
 
 (quadratic drag $$-\frac{b_2}{m} v \mathbf{v}$$ included.)
@@ -74,7 +74,7 @@ The **equations of motions** are then
 
 The baseball problem was live-coded from scratch during class and the
 notebook
-[baseball_solution.ipynb]({{ site.nbviewer.resources }}/12_ODE_applications/baseball_solution.ipynb)[^2]
+[baseball_solution.ipynb]({{ site.nbviewer.resources }}/11_ODE_applications/baseball_solution.ipynb)[^2]
 is a cleaned-up and commented solution. The lesson showed how
 
 1. to define the physical problem (obtain trajectory of a baseball
