@@ -29,7 +29,7 @@ We will study two algorithms:
 *[Newton-Raphson searching](https://mathworld.wolfram.com/NewtonsMethod.html)*.
  
 The Jupyter notebook
-[12-Root-finding.ipynb]({{ site.nbviewer.url }}/12_root_finding/12-Root-finding.ipynb)
+[12-Root-finding.ipynb]({{ site.nbviewer.resources }}/12_root_finding/12-Root-finding.ipynb)
 contains the lecture notes.[^1] The [derivations of
 the bisection and the Newton-Raphson algorithms (PDF)]({{ site.resources.fileurl }}/12_root_finding/12_rootfinding.pdf) can be found in the slides. Skeleton code for
 in-class problem exercises can be found in the notebook
