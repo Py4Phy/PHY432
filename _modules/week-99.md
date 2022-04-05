@@ -2,7 +2,7 @@
 title: Final Project
 ---
 
-April 4
+March 31
 : Final Project Overview
   : Introduction to the *Final Project*: time line, proposal, pitches
 
