@@ -1,0 +1,14 @@
+---
+title: Monte Carlo methods
+---
+
+April 26
+
+: [Monte Carlo integration]({{ site.baseurl }}{% link
+  modules/MC/integration.md %})
+  : high dimensional integrals with uniform and importance sampling
+  
+April 28
+
+: Markov Chain Monte Carlo simulations
+  : 1D Ising model for a ferromagnet
