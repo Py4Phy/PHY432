@@ -67,10 +67,10 @@ method*.
 ## Monte Carlo integration (class materials)
 
 * [montecarlo_integration.ipynb]({{ site.nbviewer.resources
-  }}/17_MC/montecarlo_integration.ipynb): evaluating integrals with
+  }}/17_MonteCarlo/montecarlo_integration.ipynb): evaluating integrals with
   uniformly sampled numbers
 * [importance_sampling.ipynb]({{ site.nbviewer.resources
-  }}/17_MC/montecarlo_integration.ipynb): importance sampling for
+  }}/17_MonteCarlo/importance_sampling.ipynb): importance sampling for
   non-smooth integrands and sampling from non-uniform distributions
   
   
