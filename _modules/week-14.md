@@ -10,5 +10,6 @@ April 26
   
 April 28
 
-: Markov Chain Monte Carlo simulations
-  : 1D Ising model for a ferromagnet
+: [Markov Chain Monte Carlo simulations]({{ site.baseurl }}{% link
+  modules/MC/mcmc.md %})
+  : 1D and 2D Ising model for a ferromagnet
