@@ -86,6 +86,6 @@ magnetization for $$T>T_c$$.</small>
   site.nbviewer.resources }}/17_MonteCarlo/ising_1d.ipynb)
 * jupyter notebook **2D Ising model** [ising_2d.ipynb]({{
   site.nbviewer.resources }}/17_MonteCarlo/ising_2d.ipynb)
-  
+* *Computational Modelling*: Chapter **11**
 
  
