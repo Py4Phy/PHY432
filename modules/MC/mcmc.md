@@ -45,16 +45,16 @@ reproduces the correct Boltzmann distribution.
 
 ## 1D and 2D Ising model in Python
 
-Object-oriented implementation of the [SpinChain]({{
-site.resources.url }}/17_MonteCarlo/ising_1d.ipynb) and
-[SpinLattice](({{ site.resources.url }}/17_MonteCarlo/ising_2d.ipynb))
-that use Metropolis MC sampling to simulate the equilibrium state of
-the 1D and 2D Ising model at finite temperature. The basic data
-structure is a NumPy array that records spins with integers +1 or -1
-and an update method that flips spins according to the Metropolis
-criterion. Auxiliary methods to run a simulation, to calculate
-averages, and to plot results are included to aid in interactive
-exploration of the Ising model.
+We provide an object-oriented implementation of the [`SpinChain`]({{
+site.resources.fileurl }}/17_MonteCarlo/ising_1d.ipynb) and
+[`SpinLattice`]({{ site.resources.fileurl
+}}/17_MonteCarlo/ising_2d.ipynb) classes that use Metropolis MC
+sampling to simulate the equilibrium state of the 1D and 2D Ising
+model at finite temperature. The basic data structure is a NumPy array
+that records spins with integers +1 or -1 and an update method that
+flips spins according to the Metropolis criterion. Auxiliary methods
+to run a simulation, to calculate averages, and to plot results are
+included to aid in interactive exploration of the Ising model.
 
 We discuss the average energy and magnetization per spin as a function
 of temperature. No phase transition is observed in 1D. In 2D a phase
