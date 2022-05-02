@@ -21,8 +21,6 @@ April 12
   modules/PDEs/PDEs_Time_Stepping.md %})
   : solving parabolic PDEs with time stepping; 1D heat/diffusion equation
 
-
-April 12
 : perspective on PDEs
   : connection between diffusion equation and Laplace equation;
     physical interpretation of classes of PDEs
