@@ -30,8 +30,9 @@ Important concepts
 
 ## Metropolis MC sampling for the Ising model
 
-Naïve importance sampling is hopeless because the state space is too
-large. The solution is the **Metropolis algorithm**
+Naïve Monte Carlo sampling is hopeless because the state space is too
+large. The solution is the **Metropolis algorithm**, which performs
+importance sampling using the Boltzmann distribution:
 
 * trial moves that ensure that the whole state space can be reached (single spin flip for a randomly chosen spin)
 * Metropolis criterion for the acceptance probability $$p_\text{accept}
