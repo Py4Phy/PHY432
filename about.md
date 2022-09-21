@@ -43,7 +43,7 @@ See the [weekly schedule]({{ site.baseurl }}/schedule/).
 
 * Tue/Thu 1:30 pm – 2:45pm, PSH 355
 * bring your laptop
-* face covering is _required_
+* face covering are _recommended_ (current university policies apply)
 
 
 ## Resources
