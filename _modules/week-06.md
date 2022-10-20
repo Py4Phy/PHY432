@@ -2,23 +2,23 @@
 title: Solving Ordinary Differential Equations
 ---
 
-Feb 15
+Feb 14
 
 : [differentiation]({{ site.baseurl }}{% link modules/ODEs/differentiation.md %})
   : numerical differentiation
 
-Feb 17
+Feb 16
 
 : [ODEs]({{ site.baseurl }}{% link modules/ODEs/ODEs.md %})
   : Introduction to solving *ordinary differential equations*.
 	  
-Feb 22
+Feb 21
 
 : [Standard Form]({{ site.baseurl }}{% link modules/ODEs/standard_form.md %})
   : Formalism for solving ODEs: the *standard form* of ODEs.
 
 
-Feb 24, Mar 1
+Feb 23, Feb 28
 
 : [Integrators]({{ site.baseurl }}{% link modules/ODEs/integrators.md %})
   : basic algorithms (Euler, Runge-Kutta, Verlet) for numerically integrating coupled ODEs

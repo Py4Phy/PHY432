@@ -2,7 +2,7 @@
 title: "Linear algebra"
 ---
 
-Mar 22
+Mar 21
 
 : [linear algebra]({{ site.baseurl }}{% link modules/linear_algebra/Linear_algebra.md %})
   : solving standard linear algebra problems (matrix equations,

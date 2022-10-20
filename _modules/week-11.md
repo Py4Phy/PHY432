@@ -2,20 +2,20 @@
 title: Partial Differential Equations
 ---
 
-Mar 29
+Mar 28
 
 : [introduction to PDEs]({{ site.baseurl }}{% link
   modules/PDEs/intro_PDEs.md %})
   : types of PDEs; simple algorithm to solve Laplace's equation
   
-April 5
+April 4
 
 : [Poisson's equation]({{ site.baseurl }}{% link
   modules/PDEs/intro_PDEs.md %})
   : algorithms to solve elliptic PDEs; 2D electrostatic problems
   
 
-April 12
+April 11
 
 : [Diffusion equation]({{ site.baseurl }}{% link
   modules/PDEs/PDEs_Time_Stepping.md %})
@@ -25,20 +25,20 @@ April 12
   : connection between diffusion equation and Laplace equation;
     physical interpretation of classes of PDEs
 
-April 14
+April 13
 
 : [Crank-Nicholson algorithm]({{ site.baseurl }}{% link
   modules/PDEs/PDEs_Time_Stepping.md %})
   : advanced solver for parabolic PDEs
   
   
-April 19
+April 18
 
 : [Wave equation 1D]({{ site.baseurl }}{% link
   modules/PDEs/PDEs_waves.md %})
   : solving the wave equation for a string (a hyperbolic PDE) with time stepping
 
-April 21
+April 20
 
 : [Wave equation 2D]({{ site.baseurl }}{% link
   modules/PDEs/PDEs_waves.md %})
