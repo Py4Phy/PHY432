@@ -36,7 +36,7 @@ from diverse areas of physics.
 
 For details about the class content, grading, and expectations please
 see the [Syllabus (PDF)]({{ site.baseurl }}{% link
-assets/docs/phy432_syllabus_2022.pdf %}).
+assets/docs/phy432_syllabus.pdf %}).
 
 ## Lecture
 See the [weekly schedule]({{ site.baseurl }}/schedule/).
