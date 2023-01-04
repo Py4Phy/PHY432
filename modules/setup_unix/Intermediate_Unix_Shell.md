@@ -212,7 +212,7 @@ Go into the `PHY432-resources/01_shell/data` directory.
 
 ### Activity
 
-1. Read the `README` file (e.g. using `vs code` or `cat` or `less` (for
+1. Read the `README` file (e.g. using `code` or `cat` or `less` (for
 the latter, use `h` to get help and `q` to quit)).
 
 2. Count the number of entries in *all files ending in "csv"*. (Hint:
@@ -247,7 +247,7 @@ in the following I will assume it; if you changed the path to
 e.g. `~/classes/2022/PHY432/bin` then you will need to use that path
 in all the following examples.)
 
-Using`vs code`, create the following script `~/bin/update_resources.sh`:
+Using`code`, create the following script `~/bin/update_resources.sh`:
 
 {% highlight bash %}
 # PHY 432 script to update the resources repository
@@ -372,6 +372,6 @@ Updated resources in /Users/oliver/PHY432-resources
 
 [^4]:
 
-    If you cannot start `vs code` from the commandline, go back to
-	[Setting up the Environment: Testing: editor (vs code)]{{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
+    If you cannot start `code` from the commandline, go back to
+	[Setting up the Environment: Testing: editor (Visual Studio Code)]{{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
     the steps described there.

@@ -477,7 +477,7 @@ We want to
 #### Commands ####
 
 * `mkdir` (make directory)
-* your editor of choice (*vs code* by default for the class, `nano` is
+* your editor of choice (*Visual Studio Code* by default for the class, `nano` is
   an alternative choice [^2])
 
 #### <span class="label" style="background: black">Activity</span> Directory structure for the class ####
@@ -509,14 +509,14 @@ Note:
 
 #### Creating text files with a text editor ####
 
-Run `vs code` by either launching it from a menu or from the commandline [^4]
+Run `Visual Studio Code` by either launching it from a menu or from the commandline [^4]
 {% highlight bash %}
 code
 {% endhighlight %}
 
 You should see something like this:
 
-![vs code get started screenshot]({{ site.baseurl }}/{{ site.figs }}/vscode_get_started.jpg)
+![Visual Studio Code get started screenshot]({{ site.baseurl }}/{{ site.figs }}/vscode_get_started.jpg)
 
 We will now create a TODO list in a file with name `TODO` and content
 
@@ -534,11 +534,11 @@ We will now create a TODO list in a file with name `TODO` and content
    
    Close all the other tabs. It should look like this: 
    
-   ![vs code new file]({{ site.baseurl }}/{{ site.figs }}/vscode_untitled.jpg)
+   ![Visual Studio Code new file]({{ site.baseurl }}/{{ site.figs }}/vscode_untitled.jpg)
 
 2. Type the todo list into the editor window.
 
-   ![vs code todo list]({{ site.baseurl }}/{{ site.figs }}/vscode_todo.jpg)
+   ![Visual Studio Code todo list]({{ site.baseurl }}/{{ site.figs }}/vscode_todo.jpg)
 
 3. Save it to file with name 'TODO' with menu option
 
@@ -546,11 +546,11 @@ We will now create a TODO list in a file with name `TODO` and content
    
    Make sure to navigate to your the `PHY432/01_shell/Documents/work` directory.
 
-   ![vs code todo list]({{ site.baseurl }}/{{ site.figs }}/vscode_project_file_view.jpg)
+   ![Visual Studio Code todo list]({{ site.baseurl }}/{{ site.figs }}/vscode_project_file_view.jpg)
 
    You can hide the "project" view with the directory structure.
 
-4. Quit vs code (details depend on your operating system; find the *Exit*
+4. Quit Visual Studio Code (details depend on your operating system; find the *Exit*
    menu option either under *File*.
 
 5. Check that the file is in the directory with `ls`.
@@ -562,7 +562,7 @@ You can re-open the file from the command line [^4]:
 code TODO
 {% endhighlight %}
 
-(Alternatively, open vs code from your GUI and find the file `TODO` through the *File*
+(Alternatively, open Visual Studio Code from your GUI and find the file `TODO` through the *File*
 → *Open file* dialog.)
 
 
@@ -651,7 +651,7 @@ system manipulations:
 5. Create a new text file `data/notes/hints.txt` and write any
    [hints](https://en.wikipedia.org/wiki/Ice_planet)  for possible
    rebel bases into this file.
-6. Open `notes/TODO.txt` in `vs code` and add a note to item 1 too look in the
+6. Open `notes/TODO.txt` in `Visual Studio Code` and add a note to item 1 too look in the
    `hints.txt` file. Save and exit.
 7. Make a copy of your `notes` directory in your work directory. Your
    tree should now look like this:
@@ -737,8 +737,8 @@ Shell](https://swcarpentry.github.io/shell-novice/).
 
 [^4]:
 
-    If you cannot start `vs code` from the commandline, go back to
-    [Setting up the Environment: Testing: editor (vs code)]({{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
+    If you cannot start `code` from the commandline, go back to
+    [Setting up the Environment: Testing: editor (Visual Studio Code)]({{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
     the steps described there.
 
 [^5]:

@@ -116,21 +116,22 @@ You can see a list of all your configuration settings with `git config
 #### <span class="label" style="background: black">Activity</span> Git Editor
 
 You also tell what editor to use to write commit messages [^1]; here
-we configure [vs code to be used with git](https://help.github.com/articles/associating-text-editors-with-git/). 
+we configure [Visual Studio Code to be used with git](https://help.github.com/articles/associating-text-editors-with-git/). 
 
 ##### Windows
 
 {% highlight bash %}
-# choose vs code as your editor: Windows
+# choose Visual Studio Code as your editor: Windows
 git config --global core.editor "code --wait"
 {% endhighlight %}
 
 
 #####  macOS and Linux
 {% highlight bash %}
-# choose vs code as your editor: Linux and Mac
+# choose Visual Studio Code as your editor: Linux and Mac
 git config --global core.editor "code --wait"
 {% endhighlight %}
+
 
 
 #### `git` basic command syntax
@@ -332,9 +333,9 @@ git commit
   * lesson 02 on git
   ~~~
   
-* After you wrote and saved the message ("save" in `vs code`, `^O` in
+* After you wrote and saved the message ("save" in `code`, `^O` in
   `nano`; `i` to write and `ESC :wq` to save and exit in `vim`) and
-  exited ("exit" in `vs code`, `^X` in `nano`), your changes will be
+  exited ("exit" in `code`, `^X` in `nano`), your changes will be
   committed to the repository.
 * You can also supply the message as an argument: `git commit -m "one
   line summary of changes"`.
@@ -665,7 +666,7 @@ enables you to easily contribute to other projects. This includes
 	 editors](https://swcarpentry.github.io/git-novice/02-setup/) and 
      [Associating text editors with
      Git](https://help.github.com/articles/associating-text-editors-with-git/)
-     for details, especially for `vs code`.
+     for details, especially for `Visual Studio Code`.
 
 	 For problems with setting up editors in Windows, see the
      StackOverflow question
