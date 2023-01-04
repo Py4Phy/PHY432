@@ -21,7 +21,7 @@ schedule:
         start: 1:30 PM
         end: 2:45 PM
         location: PSH 355
-  - name: Wednesday
+  - name: Friday
     events:
       - name: Office Hours (TA)
         start: 2:00 PM
