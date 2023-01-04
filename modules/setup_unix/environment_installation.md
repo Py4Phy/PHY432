@@ -208,9 +208,9 @@ application to your Applications directory. (For more details see <a
 href="https://code.visualstudio.com/docs/setup/mac">Visual Studio Code on macOS</a>.  
 
 We need to initially install the `code`command so that we can launch Visual Studio Code from the
-command line. Launch <b>Visual Studio Code<b>. Then, open the <b>Command Palette<b> (`Cmd+Shift+P`)
-and type "shell command" to find <b>Shell Command<b>: Install 'code' command in <b>PATH<b> command.
-Restart the terminal for the new `$PATH` value to take effect. You'll be able to type 'code .' in 
+command line. Launch <b>Visual Studio Code</b>. Then, open the <b>Command Palette</b> (`Cmd+Shift+P`)
+and type "shell command" to find <b>Shell Command</b>: Install `code` command in <b>PATH</b> command.
+Restart the terminal for the new `$PATH` value to take effect. You'll be able to type `code .` in 
 any folder to start editing files in that folder. (For more details see
 <a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">
 Launching from the command line</a>.  
