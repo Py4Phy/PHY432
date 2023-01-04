@@ -116,26 +116,20 @@ You can see a list of all your configuration settings with `git config
 #### <span class="label" style="background: black">Activity</span> Git Editor
 
 You also tell what editor to use to write commit messages [^1]; here
-we configure [atom to be used with git](https://help.github.com/articles/associating-text-editors-with-git/). 
+we configure [vs code to be used with git](https://help.github.com/articles/associating-text-editors-with-git/). 
 
 ##### Windows
 
 {% highlight bash %}
-# choose atom as your editor: Windows
-git config --global core.editor "C:/Users/USERNAME/AppData/Local/atom/bin/atom.cmd --wait"
+# choose vs code as your editor: Windows
+git config --global core.editor "code --wait"
 {% endhighlight %}
-
-where `USERNAME` should be your username. Double check that the path
-`/c/Users/USERNAME/AppData/Local/atom/bin/atom.cmd` really points to
-the `atom` command. (You can try the command `which atom`, which might
-show you the correct path on your computer.) Otherwise, add the correct path. Ask for help if
-necessary.
 
 
 #####  macOS and Linux
 {% highlight bash %}
-# choose atom as your editor: Linux and Mac
-git config --global core.editor "atom --wait"
+# choose vs code as your editor: Linux and Mac
+git config --global core.editor "code --wait"
 {% endhighlight %}
 
 
@@ -338,9 +332,9 @@ git commit
   * lesson 02 on git
   ~~~
   
-* After you wrote and saved the message ("save" in `atom`, `^O` in
+* After you wrote and saved the message ("save" in `vs code`, `^O` in
   `nano`; `i` to write and `ESC :wq` to save and exit in `vim`) and
-  exited ("quit" in `atom`, `^X` in `nano`), your changes will be
+  exited ("exit" in `vs code`, `^X` in `nano`), your changes will be
   committed to the repository.
 * You can also supply the message as an argument: `git commit -m "one
   line summary of changes"`.
@@ -671,7 +665,7 @@ enables you to easily contribute to other projects. This includes
 	 editors](https://swcarpentry.github.io/git-novice/02-setup/) and 
      [Associating text editors with
      Git](https://help.github.com/articles/associating-text-editors-with-git/)
-     for details, especially for `atom`.
+     for details, especially for `vs code`.
 
 	 For problems with setting up editors in Windows, see the
      StackOverflow question
