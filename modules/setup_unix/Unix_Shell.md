@@ -477,7 +477,7 @@ We want to
 #### Commands ####
 
 * `mkdir` (make directory)
-* your editor of choice (*atom* by default for the class, `nano` is
+* your editor of choice (*vs code* by default for the class, `nano` is
   an alternative choice [^2])
 
 #### <span class="label" style="background: black">Activity</span> Directory structure for the class ####
@@ -509,14 +509,14 @@ Note:
 
 #### Creating text files with a text editor ####
 
-Run `atom` by either launching it from a menu or from the commandline [^4]
+Run `vs code` by either launching it from a menu or from the commandline [^4]
 {% highlight bash %}
-atom
+code
 {% endhighlight %}
 
 You should see something like this:
 
-![atom welcome screenshot]({{ site.baseurl }}/{{ site.figs }}/atom_welcome.jpg)
+![vs code get started screenshot]({{ site.baseurl }}/{{ site.figs }}/vscode_get_started.jpg)
 
 We will now create a TODO list in a file with name `TODO` and content
 
@@ -530,15 +530,15 @@ We will now create a TODO list in a file with name `TODO` and content
 
    *File* → *New File*
 
-   You should have a tab named *untitled*.
+   You should have a tab named *Untitled-1*.
    
    Close all the other tabs. It should look like this: 
    
-   ![atom new file]({{ site.baseurl }}/{{ site.figs }}/atom_untitled.jpg)
+   ![vs code new file]({{ site.baseurl }}/{{ site.figs }}/vscode_untitled.jpg)
 
 2. Type the todo list into the editor window.
 
-   ![atom todo list]({{ site.baseurl }}/{{ site.figs }}/atom_todo.jpg)
+   ![vs code todo list]({{ site.baseurl }}/{{ site.figs }}/vscode_todo.jpg)
 
 3. Save it to file with name 'TODO' with menu option
 
@@ -546,12 +546,12 @@ We will now create a TODO list in a file with name `TODO` and content
    
    Make sure to navigate to your the `PHY432/01_shell/Documents/work` directory.
 
-   ![atom todo list]({{ site.baseurl }}/{{ site.figs }}/atom_project_file_view.jpg)
+   ![vs code todo list]({{ site.baseurl }}/{{ site.figs }}/vscode_project_file_view.jpg)
 
    You can hide the "project" view with the directory structure.
 
-4. Quit atom (details depend on your operating system; find the *Quit*
-   menu option either under *File* or *Atom*.
+4. Quit vs code (details depend on your operating system; find the *Exit*
+   menu option either under *File*.
 
 5. Check that the file is in the directory with `ls`.
 
@@ -559,11 +559,11 @@ We will now create a TODO list in a file with name `TODO` and content
 You can re-open the file from the command line [^4]:
 
 {% highlight bash %}
-atom TODO
+code TODO
 {% endhighlight %}
 
-(Alternatively, open atom from your GUI and find the file `TODO` through the *File*
-→ *Open* dialog.)
+(Alternatively, open vs code from your GUI and find the file `TODO` through the *File*
+→ *Open file* dialog.)
 
 
 ##### <span class="label" style="background: black">Activity</span> create a file with your editor #####
@@ -651,7 +651,7 @@ system manipulations:
 5. Create a new text file `data/notes/hints.txt` and write any
    [hints](https://en.wikipedia.org/wiki/Ice_planet)  for possible
    rebel bases into this file.
-6. Open `notes/TODO.txt` in `atom` and add a note to item 1 too look in the
+6. Open `notes/TODO.txt` in `vs code` and add a note to item 1 too look in the
    `hints.txt` file. Save and exit.
 7. Make a copy of your `notes` directory in your work directory. Your
    tree should now look like this:
@@ -737,8 +737,8 @@ Shell](https://swcarpentry.github.io/shell-novice/).
 
 [^4]:
 
-    If you cannot start `atom` from the commandline, go back to
-    [Setting up the Environment: Testing: editor (atom)]({{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
+    If you cannot start `vs code` from the commandline, go back to
+    [Setting up the Environment: Testing: editor (vs code)]({{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
     the steps described there.
 
 [^5]:

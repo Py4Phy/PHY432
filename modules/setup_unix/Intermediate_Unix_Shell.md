@@ -212,7 +212,7 @@ Go into the `PHY432-resources/01_shell/data` directory.
 
 ### Activity
 
-1. Read the `README` file (e.g. using `atom` or `cat` or `less` (for
+1. Read the `README` file (e.g. using `vs code` or `cat` or `less` (for
 the latter, use `h` to get help and `q` to quit)).
 
 2. Count the number of entries in *all files ending in "csv"*. (Hint:
@@ -247,7 +247,7 @@ in the following I will assume it; if you changed the path to
 e.g. `~/classes/2022/PHY432/bin` then you will need to use that path
 in all the following examples.)
 
-Using`atom`, create the following script `~/bin/update_resources.sh`:
+Using`vs code`, create the following script `~/bin/update_resources.sh`:
 
 {% highlight bash %}
 # PHY 432 script to update the resources repository
@@ -260,7 +260,7 @@ git pull
 echo "Updated resources in ${GIT_REPOSITORY}"
 {% endhighlight %}
 
-(You create the script by (1) `atom ~/bin/update_resources.sh` (opens
+(You create the script by (1) `code ~/bin/update_resources.sh` (opens
 empty file if it does not exist), (2) type all the lines into the
 editor (or copy & paste), (3) save the file and exit the editor.)
 
@@ -372,6 +372,6 @@ Updated resources in /Users/oliver/PHY432-resources
 
 [^4]:
 
-    If you cannot start `atom` from the commandline, go back to
-	[Setting up the Environment: Testing: editor (atom)]{{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
+    If you cannot start `vs code` from the commandline, go back to
+	[Setting up the Environment: Testing: editor (vs code)]{{ site.baseurl }}{% link modules/setup_unix/environment_installation.md %}#from-the-shell) and follow
     the steps described there.
