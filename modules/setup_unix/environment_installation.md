@@ -24,7 +24,7 @@ You will need to install
 
 1. [The Bash Shell](#the-bash-shell)
 2. [Git](#git)
-3. a [text editor](#text-editor) (by default, `atom`)
+3. a [text editor](#text-editor) (by default, *Visual Studio Code* / `code`)
 4. [Python](#python) (including a number of additional packages
 required for scientific computing)
 
@@ -161,10 +161,10 @@ typing the escape key, followed by <code>:q!</code> (colon, lower-case
 'q', exclamation mark), then hitting Return to return to the shell.
 
 
-For this class we will use <a href="https://atom.io/">atom</a> as the
-default editor. It is free, open source, available on Windows, macOS,
-and Linux, powerful but also accessible for entry-level
-programmers.
+For this class we will use <a href="https://code.visualstudio.com/">
+Visual Studio Code</a> as the default editor. It is free, open source,
+available on Windows, macOS, and Linux, powerful but also accessible
+for entry-level programmers.
   
   <!-- 
     Other editors that you can consider for serious work are
@@ -178,16 +178,12 @@ programmers.
   
 #### Windows
 
-<a href="https://atom.io/">atom</a> is a good editor that is suitable
+<a href="https://code.visualstudio.com/">Visual Studio Code</a> is a good editor that is suitable
 for professional coding but also accessible to newcomers with is
 graphical user interface.  To install it, download a suitable
-installer from <a href="https://atom.io/">atom.io</a> and double click
-on the file to run it. (If you cannot find an appropriate installer,
-look for a file "AtomSetup-x64.exe" or "AtomSetup.exe" in the <a
-href="https://github.com/atom/atom/releases/latest">list of latest
-releases</a>.)  For more details see <a
-href="https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-windows">Installing
-atom on Windows</a>.  
+installer from <a href="https://code.visualstudio.com/">code.visualstudio.com</a> and double click
+on the file to run it. (For more details see <a
+href="https://code.visualstudio.com/docs/setup/windows">Visual Studio Code on Windows</a>.  
 
 Others editors that you can use are <a
 href="http://notepad-plus-plus.org/">Notepad++</a> or <a
@@ -197,23 +193,27 @@ path.</strong> Please ask your instructor to help you do this.
 
 #### Windows (on ASU laptop)
 	  
-On the ASU school laptops, <b>atom</b> should pre-installed
+On the ASU school laptops, <b>Visual Studio Code</b> should pre-installed
 and you can use. Launch the editor from the Start Menu.
 
 #### macOS
 
-We recommend <a href="https://atom.io/">atom</a> as a good editor that
+We recommend <a href="https://code.visualstudio.com/">Visual Studio Code</a> as a good editor that
 is suitable for professional coding but also accessible to newcomers
 with is graphical user interface.  To install it, download a suitable
-installation zip file from <a href="https://atom.io/">atom.io</a> and
+installation zip file from <a href="https://code.visualstudio.com/">code.visualstudio.com</a> and
 double click on the file to unpack it. Open your Applications
-directory from the Finder in the Go menu. Drag the unpacked Atom
-application to your Applications directory. (If you cannot find an
-appropriate installer, look for a file "atom-mac.zip" or in the <a
-href="https://github.com/atom/atom/releases/latest">list of latest
-releases</a>.) For more details see <a
-href="https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-mac">Installing
-atom on Mac</a>.  
+directory from the Finder in the Go menu. Drag the unpacked Visual Studio Code
+application to your Applications directory. (For more details see <a 
+href="https://code.visualstudio.com/docs/setup/mac">Visual Studio Code on macOS</a>.  
+
+We need to initially install the `code` command so that we can launch Visual Studio Code from the
+command line. Launch <b>Visual Studio Code</b>. Then, open the <b>Command Palette</b> (`Cmd+Shift+P`)
+and type "shell command" to find <b>Shell Command</b>: Install `code` command in <b>PATH</b> command.
+Restart the terminal for the new `$PATH` value to take effect. You'll be able to type `code .` in 
+any folder to start editing files in that folder. (For more details see
+<a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">
+Launching from the command line</a>.  
 
 Alternatively, <a href="https://www.nano-editor.org/">nano</a> is a
 basic editor.  It should be pre-installed.  
@@ -225,13 +225,13 @@ Text</a>.
 
 #### Linux
 
-We recommend <a href="https://atom.io/">atom</a> as a good editor that
+We recommend <a href="https://code.visualstudio.com/">Visual Studio Code</a> as a good editor that
 is suitable for professional coding but also accessible to newcomers
 with is graphical user interface.
 
 Please follow the instructions on <a
-href="https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux">Installing
-atom on Linux</a> and ask an instructor for help if anything is
+href="https://code.visualstudio.com/docs/setup/linux">Visual 
+Studio Code on Linux</a> and ask an instructor for help if anything is
 unclear.
 
 Alternatively, <a href="https://www.nano-editor.org/">nano</a> is a
@@ -372,24 +372,21 @@ git --version
 
 which should show something like `git version 2.7.0`.
 
-### editor (atom)
+### editor (Visual Studio Code)
 
 #### First time
 
-Open `atom` using your GUI
+Open `Visual Studio Code` using your GUI
 * Windows: from the start menu
 * macOS: from the Application folder
 * Linux: varies (but you might be able to skip to "From the shell"
 
-A window should open showing the atom logo and welcome screen, similar
+A window should open showing the Visual Studio Code logo and get started screen, similar
 to 
 
-![atom welcome screenshot]({{ site.baseurl }}/{{ site.figs }}/atom_welcome.jpg)
+![Visual Studio Code get started screenshot]({{ site.baseurl }}/{{ site.figs }}/vscode_get_started.jpg)
 
-If it tries to install additional commands (`atom` and `apm`) then let
-it do it and provide your system administrator password if required.
-
-Then exit the editor again (Quit from the menu or close the
+Then exit the editor again (Exit from the menu or close the
 window).
 
 #### From the shell
@@ -397,20 +394,10 @@ window).
 In the shell, type
 
 ```bash
-atom
+code
 ```
 
 It should open the editor. Exit the editor.
-
-If this does not work then you need to let atom install additional
-commands. The Atom menu bar has a command named *"Install Shell
-Commands"* which installs the atom and apm commands, as described
-under [Opening a
-File](https://flight-manual.atom.io/getting-started/sections/atom-basics/#opening-a-file)
-(and provide your system administrator password if requested). Then
-add the atom directory to your bash start file manually as described
-under Wiki:[start atom from the git-bash
-commandline]({{ site.wiki.url }}/installation-troubleshooting#start-atom-from-the-git-bash-commandline).)
 
 
 ### Python
