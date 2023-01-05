@@ -53,39 +53,65 @@ tasks more quickly.
 
 
 #### Windows
-  <ol>
+
+For Windows, we install the bash shell together with the git version
+control software:
+
+<ol>
 	<li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
 	<li>Run the installer and follow the steps below:
 	  <ol>
-		<li>Click on "Next".</li>
-		<li>Click on "Next".</li>
-		<li>Click on "Next".</li>
-		<li>Click on "Next".</li>
-		<li>Click on "Next".</li>			
+		<li>Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens. </li>
 		<li>
-	<strong> 
-		Select "Use Git and optional Unix tools from the Command Prompt" and click
-		on "Next".
-	</strong>
-	</li>
-		<li>Click on "Next".</li>
-		<li>
-		  Click on "Next".
-		  <strong>
-			Keep "Checkout Windows-style, commit Unix-style line endings" selected.
-		  </strong>
+		<strong> 
+			From the dropdown menu, "Choosing the default editor used by Git", select "Use the Nano editor by default" (NOTE: you will need to scroll up to find it) and click on "Next".
+		</strong>
 		</li>
-		<li>
-		  <strong>
-			Select "Use Windows' default console window" and click on "Next".
-		  </strong>
-		</li>
-		<li>Click on "Next".</li>
+		<li>On the page that says "Adjusting the name of the initial
+			branch in new repositories", ensure that "Let Git decide" is
+			selected.</li>
+		<li>Ensure that "Git from the command line and also from
+			3rd-party software" is selected and click on "Next". (If you don't
+			do this Git Bash will not work properly, requiring you to remove
+			the Git Bash installation, re-run the installer and to select the
+			"Git from the command line and also from 3rd-party software"
+			option.)</li>
+		<li>Select "Use bundled OpenSSH".</li>
+	    <li>Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".</li>
+		<li>Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".</li>
+		<li><strong>Ensure that "Use Windows' default console window" is selected and click on "Next".</strong></li>
+		<li>Ensure that "Default (fast-forward or merge) is selected and click "Next".</li>
+		<li>Ensure that "Git Credential Manager" is selected and click on "Next".</li>
+		<li>Ensure that "Enable file system caching" is selected and click on "Next".</li>
 		<li>Click on "Install".</li>
-	  </ol>
+		<li>Click on "Finish" or "Next".</li>
+	</ol>
 	</li>
-  </ol>
-  <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+</ol>
+
+<p>
+This will provide you with both Git and Bash in the Git Bash program.
+</p>
+
+<p>
+If your "HOME" environment variable is not set (or you don't know what
+this is): 
+</p>
+
+<ol>
+	<li>Open command prompt (Open <i>Start Menu</i> then type <code>cmd</code> and press
+		<kbd>Enter</kbd>).</li>
+	<li>Type the following line into the command prompt window exactly as
+		shown:
+   	    <pre>
+        setx HOME "%USERPROFILE%"
+        </pre></li>
+    <li>Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value
+        was saved.</code></li>
+	<li>Quit command prompt by typing <code>exit</code> then pressing
+	<kbd>Enter</kbd>.</li>
+</ol>	
+
 
 #### macOS
 
@@ -379,7 +405,7 @@ which should show something like `git version 2.7.0`.
 Open `Visual Studio Code` using your GUI
 * Windows: from the start menu
 * macOS: from the Application folder
-* Linux: varies (but you might be able to skip to "From the shell"
+* Linux: varies (but you might be able to skip to ["From the shell"](#from-the-shell))
 
 A window should open showing the Visual Studio Code logo and get started screen, similar
 to 
@@ -472,6 +498,7 @@ See also [trouble shooting problems during the installation]({{ site.wiki.url }}
 The instructions were originally taken from [Software
 Carpentry](https://software-carpentry.org/) (in particular [David
 Dotson's 2016 workshop at
-ASU](http://smallerthings.org/2016-01-07_asu_physics/)) and adapted
+ASU](http://smallerthings.org/2016-01-07_asu_physics/) and the [SWC
+Workshop Template](https://carpentries.github.io/workshop-template/)) and adapted
 for the PHY 432 class.
 
