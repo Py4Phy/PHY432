@@ -27,7 +27,7 @@ cd ~/PHY432/03_python
 
 ## Python Hello World program ##
 
-Using you favorite editor (for instance, `atom`), create a text file named `hello.py` in the
+Using you favorite editor (for instance, *Visual Studio Code*, i.e., the `code` command), create a text file named `hello.py` in the
 directory `~/PHY432/03_python`[^1] with the
 following content:
 
@@ -326,10 +326,10 @@ In `ipython` [^3]
 [^1]:
 
     If you can call your editor from the command line then this is as
-    easy as, for example with `atom` (or `nano`),
+    easy as, for example with `code` (or `nano`),
 
          cd ~/PHY432/03_python
-         atom hello.py
+         code hello.py
 
     This will open a new file with name `hello.py` or open an existing
     file if it is present.
