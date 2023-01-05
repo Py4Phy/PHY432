@@ -24,7 +24,7 @@ You will need to install
 
 1. [The Bash Shell](#the-bash-shell)
 2. [Git](#git)
-3. a [text editor](#text-editor) (by default, `Visual Studio Code`)
+3. a [text editor](#text-editor) (by default, *Visual Studio Code* / `code`)
 4. [Python](#python) (including a number of additional packages
 required for scientific computing)
 
@@ -207,7 +207,7 @@ directory from the Finder in the Go menu. Drag the unpacked Visual Studio Code
 application to your Applications directory. (For more details see <a 
 href="https://code.visualstudio.com/docs/setup/mac">Visual Studio Code on macOS</a>.  
 
-We need to initially install the `code`command so that we can launch Visual Studio Code from the
+We need to initially install the `code` command so that we can launch Visual Studio Code from the
 command line. Launch <b>Visual Studio Code</b>. Then, open the <b>Command Palette</b> (`Cmd+Shift+P`)
 and type "shell command" to find <b>Shell Command</b>: Install `code` command in <b>PATH</b> command.
 Restart the terminal for the new `$PATH` value to take effect. You'll be able to type `code .` in 

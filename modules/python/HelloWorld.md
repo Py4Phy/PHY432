@@ -27,7 +27,7 @@ cd ~/PHY432/03_python
 
 ## Python Hello World program ##
 
-Using you favorite editor (for instance, `Visual Studio Code`), create a text file named `hello.py` in the
+Using you favorite editor (for instance, *Visual Studio Code*, i.e., the `code` command), create a text file named `hello.py` in the
 directory `~/PHY432/03_python`[^1] with the
 following content:
 

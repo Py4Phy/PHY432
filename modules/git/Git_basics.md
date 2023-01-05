@@ -666,7 +666,7 @@ enables you to easily contribute to other projects. This includes
 	 editors](https://swcarpentry.github.io/git-novice/02-setup/) and 
      [Associating text editors with
      Git](https://help.github.com/articles/associating-text-editors-with-git/)
-     for details, especially for `Visual Studio Code`.
+     for details, especially for *Visual Studio Code*.
 
 	 For problems with setting up editors in Windows, see the
      StackOverflow question

@@ -509,7 +509,7 @@ Note:
 
 #### Creating text files with a text editor ####
 
-Run `Visual Studio Code` by either launching it from a menu or from the commandline [^4]
+Run *Visual Studio Code* by either launching it from a menu or from the commandline [^4]
 {% highlight bash %}
 code
 {% endhighlight %}
@@ -651,7 +651,7 @@ system manipulations:
 5. Create a new text file `data/notes/hints.txt` and write any
    [hints](https://en.wikipedia.org/wiki/Ice_planet)  for possible
    rebel bases into this file.
-6. Open `notes/TODO.txt` in `Visual Studio Code` and add a note to item 1 too look in the
+6. Open `notes/TODO.txt` in _Visual Studio Code_ and add a note to item 1 too look in the
    `hints.txt` file. Save and exit.
 7. Make a copy of your `notes` directory in your work directory. Your
    tree should now look like this:
