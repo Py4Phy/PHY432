@@ -288,12 +288,69 @@ Safari and Firefox browsers should all be supported (some older
 browsers, including Internet Explorer version 9 and below, are not).
 
 #### Windows
-  <ol>
+
+The installation has two steps:
+1. Download and install the anaconda distribution.
+2. Modify a Git Bash startup file so that you can easily use the
+   programs in the anaconda distribution from the Git Bash command line.
+
+##### Windows anaconda installation
+We first download and install the <a href="https://www.anaconda.com/products/distribution#windows">anaconda distribution</a>:
+
+<ol>
 	<li>Open <a href="https://anaconda.com/download/#windows">https://anaconda.com/download/#windows</a> with your web browser.</li>
 	<li>Download the Python 3 64-Bit installer for Windows.</li>
 	<li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
-  </ol>
+</ol>
 
+##### Modify Git Bash startup file for anaconda
+
+The next step is a hack that ensures that you can call
+<code>python</code> and any other commands from the anaconda
+distribution (such as <code>conda</code>) from the Git Bash command line.
+
+We are adding additional information to your bash shell startup file so that Anaconda will be found.
+
+⚠️ These instructions assume that **you installed Anaconda3 in the
+default location** (`C:\Users\YOUR-USERNAME\Anaconda3`)— if _you_
+changed the location in the installation process then you will have to
+change the content of the `MYCONDA` variable below to use your custom
+location (ask an instructor for help if you are unsure how to do
+this).
+
+The following commands must be typed exactly in *Git Bash*:
+
+1. open *Git Bash* (from the *Start Menu*)
+2. type 
+   ```bash
+   cd
+   echo $HOME
+   ```
+   (always hit RETURN after typing a command)
+
+   You should see output such as `/c/Users/YOUR-USERNAME` (where "YOUR-USERNAME" stands for your user name, e.g., "alice", "bob", or "dvader")
+3. type exactly (or copy & paste --- you paste with right-mouse click
+   in *Git Bash*):
+   ```bash
+   cat >> $HOME/.bash_profile << 'EOF'
+   # PHY432 bash startup for local Anaconda
+   MYCONDA="$HOME/Anaconda3"
+   export PATH="$MYCONDA:$MYCONDA/Scripts:$MYCONDA/Library/bin:$PATH"
+   unset MYCONDA
+   EOF
+   ```
+4. close Git Bash
+5. open a new Git Bash (this is important so that the changes take effect)
+6. type
+   ```bash
+   which conda
+   ```
+   Should print something like `/c/Users/YOUR-USERNAME/Anaconda3/Scripts/conda`.
+
+⚠️ If the last step did not work then **ask an instructor for help**. 
+You can also look at the detailed explanation in the PHY432
+troubleshooting wiki, [solution: pip or python are not found in
+  git-bash]({{ site.wiki.url }}/installation-troubleshooting#pip-or-python-are-not-found-in-git-bash).
 
 
 <!--
@@ -309,7 +366,7 @@ browsers, including Internet Explorer version 9 and below, are not).
         <li>Install Python 3 using all of the defaults for
     installation <em>except</em> make sure to check <strong>Make
     Anaconda the default Python</strong> and set the destination folder to <strong>C:\ProgramData\Anaconda3</strong>.</li>
-		<li>Open the Git-Bash command line</li>
+		<li>Open the Git Bash command line</li>
 		<li>Append (<tt>>></tt>) to the file <tt>$HOME/.bash_profile</tt> the following content by typing
 		<pre>
 cat >> $HOME/.bash_profile << 'EOF'
@@ -320,10 +377,10 @@ unset MYCONDA
 EOF
 </pre>This will instruct Bash to look for your conda installation
 before anything else.</li>
-    <li>Close the Git-Bash window.</li>
-	<li>Open a new Git-Bash window and type <strong>conda init bash</strong> (so that your conda can work under bash).</li>
-	<li>Close current Git-Bash window and open a new one to let all settings take effect.</li>
-	<li>If you still have problems running conda/python on windows, please visit: <a href="https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting#pip-or-python-are-not-found-in-git-bash">trouble shooting</a>.</li>
+    <li>Close the Git Bash window.</li>
+	<li>Open a new Git Bash window and type <strong>conda init bash</strong> (so that your conda can work under bash).</li>
+	<li>Close current Git Bash window and open a new one to let all settings take effect.</li>
+	<li>If you still have problems running conda/python on windows, please visit: <a href="https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting#pip-or-python-are-not-found-in-Git Bash">trouble shooting</a>.</li>
     </ol>
 -->	
 
@@ -340,7 +397,7 @@ before anything else.</li>
 	<li>Open <a href="https://anaconda.com/download/#linux">https://anaconda.com/download/#linux</a> with your web browser.</li>
 	<li>Download the Python 3 installer for Linux. (Most likely the 64-Bit (x86) Installer is correct for your laptop.)</li>
 	<li>Install Python 3 using all of the defaults for installation.
-	(Installation requires using the shell. If you aren't
+	(⚠️ Installation requires using the shell. If you aren't
 	comfortable doing the installation yourself
 	stop here and request help.)</li>
 	<li>
@@ -368,8 +425,10 @@ before anything else.</li>
 
 Once you have installed everything, go through the individual steps
 below and executed every command. Compare what happens in your case to
-what is described. If you don't get equivalent output, ask an
-instructor for clarification or help.
+what is described. 
+
+⚠️ If you don't get equivalent output, ask an instructor for
+clarification or help.
 
 ### Bash shell
 
@@ -476,7 +535,7 @@ If you have problems, ask an instructor.
 
 #### Common problems
 
-* On Windows, the `pip` or `python` commands are not found. Follow the
+* On Windows, the `python` (or `conda` or `pip`)  commands are not found. Follow the
   steps under [solution: pip or python are not found in
   git-bash]({{ site.wiki.url }}/installation-troubleshooting#pip-or-python-are-not-found-in-git-bash)
 * On macOS, if you get the error *OSError: [Errno 49] Can't assign
@@ -487,7 +546,7 @@ If you have problems, ask an instructor.
   Windows: `/c/Users/Physics/Anaconda3/conda`, macOS:
   `/Users/physics/Anaconda3/conda`, Linux:
   `/home/physics/Anaconda3/conda`). Try exiting the terminal and open
-  a new terminal (or git bash) and try again. Changes to `PATH` only
+  a new terminal (or Git Bash) and try again. Changes to `PATH` only
   take effect when a new shell is opened.
 
 See also [trouble shooting problems during the installation]({{ site.wiki.url }}/installation-troubleshooting)
