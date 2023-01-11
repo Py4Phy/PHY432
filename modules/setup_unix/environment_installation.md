@@ -217,32 +217,59 @@ href="http://www.sublimetext.com/">Sublime Text</a>.  <strong>Be aware
 that you must add its installation directory to your system
 path.</strong> Please ask your instructor to help you do this.
 
+<!-- 
 #### Windows (on ASU laptop)
 	  
 On the ASU school laptops, <b>Visual Studio Code</b> should pre-installed
 and you can use. Launch the editor from the Start Menu.
 
+-->
+
 #### macOS
 
 We recommend <a href="https://code.visualstudio.com/">Visual Studio Code</a> as a good editor that
 is suitable for professional coding but also accessible to newcomers
-with is graphical user interface.  To install it, download a suitable
-installation zip file from <a href="https://code.visualstudio.com/">code.visualstudio.com</a> and
-double click on the file to unpack it. Open your Applications
-directory from the Finder in the Go menu. Drag the unpacked Visual Studio Code
-application to your Applications directory. (For more details see <a 
-href="https://code.visualstudio.com/docs/setup/mac">Visual Studio Code on macOS</a>.  
+with is graphical user interface but there are also <a
+href="#alternative-editors-for-macos">alternative editors</a> available.
 
-We need to initially install the `code` command so that we can launch Visual Studio Code from the
-command line. Launch <b>Visual Studio Code</b>. Then, open the <b>Command Palette</b> (`Cmd+Shift+P`)
-and type "shell command" to find <b>Shell Command</b>: Install `code` command in <b>PATH</b> command.
-Restart the terminal for the new `$PATH` value to take effect. You'll be able to type `code .` in 
-any folder to start editing files in that folder. (For more details see
-<a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">
-Launching from the command line</a>.  
+##### Install Visual Studio Code for macOS
 
-Alternatively, <a href="https://www.nano-editor.org/">nano</a> is a
-basic editor.  It should be pre-installed.  
+
+To install *Visual Studio Code*, 
+
+1. download a suitable installation zip file from <a
+   href="https://code.visualstudio.com/">code.visualstudio.com</a>
+2. double click on the file to unpack it. 
+3. Open your Applications directory from the Finder in the Go menu. 
+4. Drag the unpacked Visual Studio Code application to your
+   Applications directory. 
+
+(For more details see <a
+href="https://code.visualstudio.com/docs/setup/mac">Visual Studio Code on macOS</a>.)
+
+##### Install the `code` command for VS Code
+
+⚠️ If you are using **Visual Studio Code** then you need to install the
+`code` command so that we can launch Visual Studio Code from the
+command line:
+
+1. Launch <b>Visual Studio Code</b>. 
+2. Open the <b>Command Palette</b> (`Cmd+Shift+P`).
+3. Type "shell command" to find <b>Shell Command</b>: Install `code`
+   command in <b>PATH</b> command.
+   
+Restart the terminal for the new `$PATH` value to take effect. 
+
+You'll be able to type `code .` in any folder to start editing files
+in that folder. (For more details see <a
+href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">
+Launching from the command line</a>.
+
+##### Alternative editors for macOS
+
+If you don't want to use VS Code, you can always use <a
+href="https://www.nano-editor.org/">nano</a>, which is a basic editor.
+It should be pre-installed.
 
 Others editors that you can use are <a
 href="http://www.barebones.com/products/textwrangler/">Text
