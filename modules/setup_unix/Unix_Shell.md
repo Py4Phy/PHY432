@@ -207,7 +207,7 @@ which shows `/home/dvader`.
   
   and hit enter. Note the directory name: this is your home directory.
   
-* share your home directory name (copy and paste into the chat)
+* share your home directory name (show your neighbor or copy and paste into the chat)
 
 
 #### Listing file system contents: `ls` ####
@@ -229,7 +229,7 @@ data
   ls
   {% endhighlight %}
 
-* Compare the files that you see with those of your neighbor: copy and paste into the chat
+* Compare the files that you see with those of your neighbor (show or copy and paste into the chat)
 
 
 #### Moving around the file system: `cd` ####
@@ -501,7 +501,7 @@ Note:
 * Plain `mkdir` cannot create multiple directories deep in one go
   unless you have the `-p` option available (check!).
 
-#### Activity ####
+#### <span class="label" style="background: black">Activity</span> Create `Documents/work` ####
 
 1. Inside your `01_shell` directory, create three directories, `data`
    and `Documents/work`.
@@ -566,7 +566,7 @@ code TODO
 → *Open file* dialog.)
 
 
-##### <span class="label" style="background: black">Activity</span> create a file with your editor #####
+##### <span class="label" style="background: black">Activity</span> Create a file with your editor #####
 
 * Create a file `~/PHY432/Documents/work/lesson.txt` with three
   lessons from today:
@@ -597,7 +597,7 @@ code TODO
   something, it is gone. Be especially careful with `rm -r`.
   {: .text-red-300 .d-inline }
 
-  `rm` also has the force (`-f`) option to ignore any safe guards such
+  `rm` also has the force (`-f`) option to ignore any safeguards such
   as permission settings that would otherwise not let you write to or
   delete a file.
 
@@ -627,7 +627,7 @@ this:
         └── data
 
 
-Starting from this dirctory structure, perform the following file
+Starting from this directory structure, perform the following file
 system manipulations:
 
 1. Make a backup (call it `TODO.bak`) of the TODO list with the `cp`
