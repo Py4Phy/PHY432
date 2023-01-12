@@ -69,7 +69,7 @@ and special shell characters
 * `>` (redirects output to a file)
 * `<` (redirects file to input)
 
-### Working with redirection and command pipelines ###
+### <span class="label" style="background: black">Activity</span> Working with redirection and command pipelines ###
 
 Download [planets.dat]({{ site.baseurl }}/{{ site.data }}/planets.dat)[^3]
 and put it in the directory `data/`. You can do this with your web
@@ -122,7 +122,7 @@ cat planets.dat planets.dat > planets_2.dat
 (`cat` concatenates files and then you redirect it to a new file.)
 
 
-#### Activity ####
+#### <span class="label" style="background: black">Activity</span> Counting planets ####
 
 1. Test that `wc -l` gives just the number of lines ("60").
 2. What does `wc planets.dat planets_2.dat` do?
@@ -166,7 +166,7 @@ Get the terrain types
 cut -b 29-  planets.dat
 {% endhighlight %}
 
-#### Activity ####
+#### <span class="label" style="background: black">Activity</span> Finding the rebel base planet ####
 
 1. Count the number of planets in `planets_2.dat`.
 2. Find planets where the rebel might have a base (hint: you know it's
@@ -210,7 +210,7 @@ git pull
 
 Go into the `PHY432-resources/01_shell/data` directory.
 
-### Activity
+### <span class="label" style="background: black">Activity</span> Analyze Star Wars™ characters ###
 
 1. Read the `README` file (e.g. using `code` or `cat` or `less` (for
 the latter, use `h` to get help and `q` to quit)).
@@ -228,7 +228,7 @@ use a glob pattern)
 
    Use this approach to sort the people in order of decreasing weight.
 
-## Shell scripts
+## Shell scripts ##
 
 You can save commands in a file. This is called a **script**. A script
 allows you to reuse commands (laziness is a programmer's virtue!)
