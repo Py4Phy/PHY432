@@ -555,6 +555,16 @@ We now have to set the newly created, empty GitHub repository as the remote repo
 git push --set-upstream origin main
 {% endhighlight %}
 
+* Enter your **GitHub USERNAME** when asked for *username*
+* Enter your **personal access token** when asked for a *password*.
+
+**Note**
+{: .label .label-yellow .float-left .text-grey-dk-300 }
+If you don't want to enter your username/token every time then there are 
+different ways to manage your credentials. GitHub [recommends](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) the [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager/blob/main/README.md).
+On Canvas I show you a simpler (but less safe) way to store the username/token in the
+remote repository URL in your local repository.[^8]
+
 Look at the web interface at
 https://github.com/USERNAME/PHY432 and see your changes
 appear.
@@ -562,6 +572,14 @@ appear.
 You only need the `--set-upstream origin main` (or `-u origin main`) for the
 first time (it tells git which "branches" to associate with each other in local
 and remote) [^4]. 
+
+The next time, just run
+{% highlight bash %}
+git push
+{% endhighlight %}
+to update your remote repository with your local changes.
+
+
 
 ### <span class="label" style="background: black">Activity</span> Update (push) local content ###
 
