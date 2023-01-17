@@ -160,7 +160,7 @@ A repository starts from a directory with files.
 During the class you will work on programs. We will store all this work in a specific directory
 for the class named `~/PHY432`, to keep things tidy. 
 
-Make a directory `~/PHY432` where you will do your work:[^0]
+Make a directory `~/PHY432` where you will do your work:[^9]
 {% highlight bash %}
 mkdir ~/PHY432
 {% endhighlight %}
@@ -476,9 +476,6 @@ Let's set up a remote repository for your work in the class.
 
 ### <span class="label" style="background: black">Activity</span> Create GitHub repo and authentication ###
 
-0. You might already have created the `~/PHY432` directory in an earlier lesson. If this is the
-   case then your `mkdir ~/PHY432` command will fail. That's ok. Just use the directory that
-   you have.
 1. Go to <https://github.com> and create a new account. It is
    free.[^2] Remember your
    GitHub **username** and the **password**.
@@ -752,3 +749,10 @@ enables you to easily contribute to other projects. This includes
     in clear text in the `.git` repository and is visible with `git
     remote -v`.
 	{: .text-red-300 }
+
+[^9]:
+
+    You might already have created the `~/PHY432` directory in an earlier lesson. If this is the
+    case then your `mkdir ~/PHY432` command will fail. That's ok. Just use the directory that
+    you have.
+
