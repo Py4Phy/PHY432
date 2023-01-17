@@ -195,7 +195,7 @@ Working with the `git` *version control software*; see https://git-scm.com/.
 important). Also create a file `~/01_shell/hello.sh` with content
 {% highlight markdown %}
 # simple bash script example
-echo "Hello World!"
+echo "Hello ${USER}!"
 {% endhighlight %}
 
 Your directory structure should now have two `README.md` files and `hello.sh` (you can
@@ -245,7 +245,7 @@ git status
 
 which gives
 ~~~
-On branch master
+On branch main
 
 No commits yet
 
@@ -525,8 +525,11 @@ We now have to set the newly created, empty GitHub repository as the remote repo
    ```
 
 2. Traditionally, git used the name "master" for the main branch of
-   the work. However, this name is falling rapidly out of favor so we
-   rename our branch to "main":
+   the work. However, this name is falling rapidly out of favor and
+   newer version of git default to the name **"main"**. 
+   
+   If you have a version of git that insists on "master", rename our
+   branch to "main":
 
    ```bash
    git branch -M main
