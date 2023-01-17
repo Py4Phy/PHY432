@@ -67,6 +67,7 @@ information will be the user information in the commit history.
 
 #### <span class="label" style="background: black">Activity</span> Personalization
 
+##### Your identity #####
 Set your name and email. 
 
 Use a name and email address that can appear in the clear in the world
@@ -93,7 +94,7 @@ git config --global user.email "dvader@empire.gov"
 git config --global color.ui "auto"
 {% endhighlight %}
 
-
+##### Line endings #####
 There are subtle differences between how Windows and Linux/macOS treat
 line endings, which matters for programming. [Without going into
 details](https://swcarpentry.github.io/git-novice/02-setup/), please
@@ -109,7 +110,17 @@ On **macOS** or **Linux**
 git config --global core.autocrlf input
 {% endhighlight %}
 
+##### Default branch name #####
+Git histories can have different *branches*. The main development branch (the one we typically work on)
+used to be called "master" but this name is falling rapidly out of favor and the generally used name
+is now simply *"main"*. Newer version of git may use "main" by default but for consistency we can
+configure git to do so: 
+{% highlight bash %}
+git config --global init.defaultBranch main
+{% endhighlight %}
 
+
+##### Config settings listing #####
 You can see a list of all your configuration settings with `git config
 --list`.
 
@@ -118,19 +129,15 @@ You can see a list of all your configuration settings with `git config
 You also tell what editor to use to write commit messages [^1]; here
 we configure [Visual Studio Code to be used with git](https://help.github.com/articles/associating-text-editors-with-git/). 
 
-##### Windows
-
 {% highlight bash %}
-# choose Visual Studio Code as your editor: Windows
+# choose Visual Studio Code as your editor
 git config --global core.editor "code --wait"
 {% endhighlight %}
 
-
-#####  macOS and Linux
-{% highlight bash %}
-# choose Visual Studio Code as your editor: Linux and Mac
-git config --global core.editor "code --wait"
-{% endhighlight %}
+(If you want to choose another editor such as `nano`, ask an instructor. 
+If you do not make any choices, then the default editor is chose by the 
+system and it might be [`vim`](https://www.vim.org/), which is powerful
+but initially hard to learn.)  
 
 
 
@@ -150,8 +157,10 @@ A repository starts from a directory with files.
 
 #### <span class="label" style="background: black">Activity</span> Create your `~/PHY432` directory ####
 
-During the class you will work on programs. Make a directory
-`~/PHY432` where you will do your work:
+During the class you will work on programs. We will store all this work in a specific directory
+for the class named `~/PHY432`, to keep things tidy. 
+
+Make a directory `~/PHY432` where you will do your work:[^0]
 {% highlight bash %}
 mkdir ~/PHY432
 {% endhighlight %}
@@ -192,7 +201,7 @@ and
 Working with the `git` *version control software*; see https://git-scm.com/.
 {% endhighlight %}
 (or write whatever you want — the exact content is not
-important). Also create a file `~/01_shell/hello.sh` with content
+important). Also create a file `01_shell/hello.sh` with content
 {% highlight markdown %}
 # simple bash script example
 echo "Hello ${USER}!"
@@ -467,6 +476,9 @@ Let's set up a remote repository for your work in the class.
 
 ### <span class="label" style="background: black">Activity</span> Create GitHub repo and authentication ###
 
+0. You might already have created the `~/PHY432` directory in an earlier lesson. If this is the
+   case then your `mkdir ~/PHY432` command will fail. That's ok. Just use the directory that
+   you have.
 1. Go to <https://github.com> and create a new account. It is
    free.[^2] Remember your
    GitHub **username** and the **password**.
