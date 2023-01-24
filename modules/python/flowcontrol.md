@@ -468,10 +468,10 @@ for line in text.split('\n'):
 
          
      1. Split into teams of 2. (Be nice. Introduce yourselves.) 
-     2. <strike>Sit next to each other at one desk.</strike> Share a Zoom Breakout room
+     2. Sit next to each other at one desk. (When doing this exercise virtually: Share a Zoom Breakout room.)
      3. [Flip a coin](https://www.random.org/coins/?num=1&cur=60-usd.0100c-washington)
         to decide who will start out as the *navigator* and who will
         be the *driver*.     
-     4. <strike>Decide whose laptop you are going to use.</strike> The *driver* will share their screen and type and run code.
-     5. <strike>Switch roles every ~5 minutes</strike> Maintain roles for one exercise (or switch if feasible, e.g., if you can quickly exchange code via a remote repository)
+     4. Decide whose laptop you are going to use. (Virtually: The *driver* will share their screen and type and run code.)
+     5. Switch roles every ~5 minutes. (Virtually: Maintain roles for one exercise (or switch if feasible, e.g., if you can quickly exchange code via a remote repository).)
 
