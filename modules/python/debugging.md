@@ -20,8 +20,76 @@ Mark II computer).
 {:toc}
 </details>
 
+## Exceptions ##
 
-## Types of bugs
+When Python code fails, it raises an **[Exception](https://docs.python.org/3/tutorial/errors.html#exceptions)**:
+
+```python
+10 * (1/0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+
+4 + spam*3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'spam' is not defined
+
+'2' + 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+```
+
+
+## Error handling ##
+
+Some errors cannot be avoided and we our code to handle them
+gracefully. This is especially true when handling external inputs.
+
+Python provides the
+[try...except](https://docs.python.org/3/tutorial/errors.html)
+statement to handle exceptions.
+
+In the example, we handle
+1. incorrect input (detected by a `TypeError`)
+2. division by zero
+
+```python
+def normalize(data):
+   """Normalize numbers in data to range 0...1"""
+   
+   try:
+      xmin = min(data)
+      xmax = max(data)
+   except TypeError:
+      print(f"ERROR: data = {data} contains non-numeric input")
+      raise
+
+   datarange = xmax - xmin
+   try:
+      normalized_data = [(x - xmin)/datarange for x in data]
+   except ZeroDivisionError:
+      print("Range of data is 0, returning 0")
+      normalized_data = [0.0 for x in data]
+      
+   return normalized_data
+```
+
+Note that one can *re-raise* an existing exception from an `except`
+block with a bare `raise` statement.
+
+If you want to raise an exception, use
+```python
+raise ValueError("Incorrect input for data")
+```
+
+**Fail early and often** — when your code cannot continue safely, it's
+better to raise an exception and give up. Calling code can then still
+decide to handle the exception.
+
+
+## Types of bugs ##
 
 Bugs can be
 
@@ -221,7 +289,7 @@ print(values)
   [Errors and Exceptions](http://swcarpentry.github.io/python-novice-inflammation/09-errors/)
   and [Debugging](http://swcarpentry.github.io/python-novice-inflammation/11-debugging/)
 * [Scipy lecture notes: Debugging](http://www.scipy-lectures.org/advanced/debugging/)
-  by Gaël Varoquaux (advanced level)
+  by GaÃ«l Varoquaux (advanced level)
 
 
 ------------------------------------------------------------
