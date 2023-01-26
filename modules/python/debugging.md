@@ -63,8 +63,7 @@ def normalize(data):
       xmin = min(data)
       xmax = max(data)
    except TypeError:
-      print(f"ERROR: data = {data} contains non-numeric input")
-      raise
+      raise TypeError(f"ERROR: data = {data} contains non-numeric input")
 
    datarange = xmax - xmin
    try:
@@ -76,13 +75,15 @@ def normalize(data):
    return normalized_data
 ```
 
-Note that one can *re-raise* an existing exception from an `except`
-block with a bare `raise` statement.
 
 If you want to raise an exception, use
 ```python
 raise ValueError("Incorrect input for data")
 ```
+
+Note that one can also simply *re-raise* an existing exception from an
+`except` block with a bare `raise` statement.
+
 
 **Fail early and often** — when your code cannot continue safely, it's
 better to raise an exception and give up. Calling code can then still
