@@ -25,17 +25,17 @@ Mark II computer).
 When Python code fails, it raises an **[Exception](https://docs.python.org/3/tutorial/errors.html#exceptions)**:
 
 ```python
-10 * (1/0)
+>>> 10 * (1/0)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 
-4 + spam*3
+>>> 4 + spam*3
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'spam' is not defined
 
-'2' + 2
+>>> '2' + 2
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: can only concatenate str (not "int") to str
