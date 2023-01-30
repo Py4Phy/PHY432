@@ -1,7 +1,7 @@
 ---
 title: Week 3 Announcement
 week: 3
-date: 2022-01-24
+date: 2023-01-23
 ---
 
 ![python logo](https://www.python.org/static/img/python-logo.png)
