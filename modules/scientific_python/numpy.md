@@ -67,10 +67,9 @@ git pull
 Copy the notebooks to your work directory
 
 {% highlight bash %}
-cd
-mkdir ~/PHY432/06_numpy
-cd ~/PHY432/06_numpy
-cp ~/PHY432-resources/06_numpy/06-intro-*.ipynb .
+cd ~/PHY432
+cp -R ~/PHY432-resources/06_numpy .
+cd 06_numpy
 {% endhighlight %}
 
 
@@ -80,10 +79,14 @@ and launch the Jupyter notebook interface in your web browser[^1]:
 jupyter notebook
 {% endhighlight %}
 
-Select the notebooks *06-intro-numpy.ipynb* from the list. See [How to
-use the notebook]({{ site.baseurl
-}}{% link modules/scientific_python/jupyter.md
-%}#how-to-use-the-notebook) for basic notebook commands.
+* Select the notebooks *live/06-intro-numpy-LIVE.ipynb* from the list
+  if you want to work along with your instructor.
+* Select the notebooks *06-intro-numpy.ipynb* from the list for the
+  complete notebook (e.g., when reviewing).
+
+See [How to use the notebook]({{ site.baseurl }}{% link
+modules/scientific_python/jupyter.md %}#how-to-use-the-notebook) for
+basic notebook commands.
 
 ## numpy key concepts
 
