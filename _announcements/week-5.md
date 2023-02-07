@@ -1,7 +1,7 @@
 ---
 title: Week 5 Announcement
 week: 5
-date: 2022-02-07
+date: 2023-02-06
 ---
 
 In Week 5 we will use NumPy and matplotlib to analyze an ensemble of
