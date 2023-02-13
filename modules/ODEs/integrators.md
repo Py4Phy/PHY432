@@ -2,8 +2,8 @@
 layout: default
 title: Integrators
 parent: Ordinary Differential Equations
-has_children: false
 nav_exclude: true
+nav_order: 3
 ---
 
 <details open markdown="block">

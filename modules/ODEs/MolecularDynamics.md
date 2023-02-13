@@ -3,6 +3,7 @@ layout: default
 title: Molecular Dynamics (MD) Simulations
 parent: Ordinary Differential Equations
 nav_exclude: true
+nav_order: 6
 ---
 
 Classical **molecular dynamics** (MD) simulations consist of a large

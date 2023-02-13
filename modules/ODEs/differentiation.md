@@ -3,6 +3,7 @@ layout: default
 title: Differentiation
 parent: Ordinary Differential Equations
 nav_exclude: true
+nav_order: 0
 ---
 
 Taking numerical derivatives is based on the elementary definition

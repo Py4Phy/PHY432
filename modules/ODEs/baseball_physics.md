@@ -3,6 +3,7 @@ layout: default
 title: Baseball physics
 parent: Ordinary Differential Equations
 nav_exclude: true
+nav_order: 5
 ---
 
 After implementing a number of

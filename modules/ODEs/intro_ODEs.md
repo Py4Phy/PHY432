@@ -3,6 +3,7 @@ layout: default
 title: Introduction to ODEs
 parent: Ordinary Differential Equations
 nav_exclude: true
+nav_order: 1
 ---
 
 <details open markdown="block">

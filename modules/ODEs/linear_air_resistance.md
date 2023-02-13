@@ -3,6 +3,7 @@ layout: default
 title: "Projectile with linear air resistance"
 parent: Ordinary Differential Equations
 nav_exclude: true
+nav_order: 4
 ---
 
 After implementing a number of

@@ -3,10 +3,11 @@ layout: default
 title: Standard Form of ODEs
 parent: Ordinary Differential Equations
 nav_exclude: true
+nav_order: 2
 ---
 
 We will introduce a general formalism for representing systems of
-coupled [ODEs]({{ site.baseurl }}{% link modules/ODEs/ODEs.md %}) as
+coupled [ODEs]({{ site.baseurl }}{% link modules/ODEs/intro_ODEs.md %}) as
 vector functions. This formalism will make it easy to write
 integration algorithms for ODEs of any order.
 
