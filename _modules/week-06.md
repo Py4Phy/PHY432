@@ -9,7 +9,7 @@ Feb 14
 
 Feb 16
 
-: [ODEs]({{ site.baseurl }}{% link modules/ODEs/ODEs.md %})
+: [ODEs]({{ site.baseurl }}{% link modules/ODEs/intro_ODEs.md %})
   : Introduction to solving *ordinary differential equations*.
 	  
 Feb 21
