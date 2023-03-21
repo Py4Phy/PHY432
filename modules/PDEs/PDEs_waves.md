@@ -3,10 +3,11 @@ layout: default
 title: "PDEs: Wave equation"
 parent: Partial Differential Equations
 nav_exclude: true
+nav_order: 2
 ---
 
 The wave equation is a hyperbolic [partial differential equation
-(PDE)]({{ site.baseurl }}{% link modules/PDEs/intro_PDEs.md %}) which
+(PDE)]({{ site.baseurl }}{% link modules/PDEs/PDEs.md %}) which
 describes the displacement $$y(x,t)$$ as a function of position and
 time. The 1D linear wave equation is
 

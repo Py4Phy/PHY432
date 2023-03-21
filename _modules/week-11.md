@@ -5,13 +5,13 @@ title: Partial Differential Equations
 Mar 28
 
 : [introduction to PDEs]({{ site.baseurl }}{% link
-  modules/PDEs/intro_PDEs.md %})
+  modules/PDEs/PDEs.md %})
   : types of PDEs; simple algorithm to solve Laplace's equation
   
 April 4
 
 : [Poisson's equation]({{ site.baseurl }}{% link
-  modules/PDEs/intro_PDEs.md %})
+  modules/PDEs/PDEs_hyperbolic.md %})
   : algorithms to solve elliptic PDEs; 2D electrostatic problems
   
 

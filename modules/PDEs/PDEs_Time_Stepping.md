@@ -3,10 +3,11 @@ layout: default
 title: Solving PDEs with time stepping
 parent: Partial Differential Equations
 nav_exclude: true
+nav_order: 1
 ---
 
 [Partial differential equations (PDEs)]({{ site.baseurl }}{% link
-modules/PDEs/intro_PDEs.md %}) may depend on both space and time
+modules/PDEs/PDEs.md %}) may depend on both space and time
 derivatives such as the parabolic *heat equation*
 
 $$
@@ -55,7 +56,7 @@ therefore stable.
     (PDF)]({{ site.resources.fileurl }}/15_PDEs/15_PDEs_LectureNotes_HeatEquation.pdf)
   * discussion on the stability of the simple leapfrog algorithm and
     how the *relaxation* Jacobi algorithm for [solving Poisson's
-    equation]({{ site.baseurl }}{% link modules/PDEs/intro_PDEs.md
+    equation]({{ site.baseurl }}{% link modules/PDEs/PDEs_hyperbolic.md
     %}#solving-pdes-numerically) numerically implements solving a
     diffusion equation: [15_PDEs_comments.ipynb]({{
     site.nbviewer.resources }}/15_PDEs/15_PDEs_comments.ipynb)
