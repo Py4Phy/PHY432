@@ -142,6 +142,61 @@ differently you can run it by opening a terminal and typing
 <code>bash</code>.  There is no need to install anything.
 
 
+#### ChromeOS ####
+[ChromeOS](https://www.google.com/chromebook/chrome-os/) is the
+operating system from a **Chromebook**. 
+
+In order to install software for the class on a Chromebook you need to
+first *enable the Linux system on the Chromebook*, following the
+instructions below. (You can check [How to enable Linux on your
+Chromebook (and why you
+should)](https://www.zdnet.com/article/how-to-enable-linux-on-your-chromebook-and-why-you-should/)
+to enable Linux.) This will, amongst other things, **install the Bash
+shell**.
+
+We found that you can enable Linux on Chromebook, and it will just
+work as a Linux system. Please follow the [instructions to enable
+Linux](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started#_enable-linux-on-your-chromebook),
+which can be summarized as:
+
+1. open your system's *Settings*
+2. look for *Linux (Beta)* on the sidebar
+3. turn on Linux support: Follow the instructions on screen to
+   configure the Linux environment (for most people, accepting the
+   default values should be enough). Your Chromebook will then
+   download the tools to create the Linux environment and configure it
+   for you.
+4. Once the Linux environment has been set up, you'll see a new
+   terminal window popping up.
+5. In the *Terminal*, run the following commands to install some
+   needed Linux packages
+   ```bash 
+   sudo apt-get update
+   sudo apt-get install -y gnome-keyring
+   ```
+
+##### Terminal #####
+
+*Terminal* is an application in the Linux folder that gives you access
+to the command line. It runs the *bash* shell (which is what we need for
+the class).
+
+Keep a shortcut for Terminal handy.
+
+(You can also run Terminal inside VS Code although we commonly open it as a separate application.)
+
+
+##### Installing missing packages with `apt-get` #####
+
+`apt-get` is the package manager that knows where to find software
+packages and how to install them.
+
+If you later find that something is missing, you can install it with
+```bash
+sudo apt-get install PACKAGE_NAME
+```
+where PACKAGE_NAME is the name of the package (e.g., "git").
+
 
 ### Git ###
 
@@ -171,9 +226,24 @@ list</a>.  After installing Git, there will not be anything in your
 #### Linux
 
 If Git is not already available on your machine you can try to install
-it via your distro's package manager. For Debian/Ubuntu run <code>sudo
-apt-get install git</code> and for Fedora run <code>sudo yum install
-git</code>.
+it via your distro's package manager. For *Debian/Ubuntu* run 
+```bash
+sudo apt-get install git
+```
+and for *Fedora* run 
+```bash
+sudo yum install git
+```
+
+#### ChromeOS ####
+
+You should have the `bash` shell and `git` already installed. 
+
+If `git` is missing, install it with 
+```bash
+sudo apt-get install -y git
+```
+in the *Terminal*.
 
 
 ### Text Editor ###
@@ -189,33 +259,19 @@ typing the escape key, followed by <code>:q!</code> (colon, lower-case
 
 For this class we will use <a href="https://code.visualstudio.com/">
 Visual Studio Code</a> as the default editor. It is free, open source,
-available on Windows, macOS, and Linux, powerful but also accessible
-for entry-level programmers.
+available on Windows, macOS, Linux, and ChromeOS, powerful but also
+accessible for entry-level programmers.
   
-  <!-- 
-    Other editors that you can consider for serious work are
-	[Emacs](http://www.gnu.org/software/emacs/),
-	[Vim](http://www.vim.org/) (both of which come with a steep
-	learning curve), or a graphical editor such as
-	[Gedit](http://projects.gnome.org/gedit/), [Sublime
-	Text](https://www.sublimetext.com/). On Windows, a free editor is
-	[Notepad++](http://notepad-plus-plus.org/).
-	-->
-  
+
 #### Windows
 
 <a href="https://code.visualstudio.com/">Visual Studio Code</a> is a good editor that is suitable
 for professional coding but also accessible to newcomers with is
-graphical user interface.  To install it, download a suitable
+graphical user interface.[^1]  To install it, download a suitable
 installer from <a href="https://code.visualstudio.com/">code.visualstudio.com</a> and double click
 on the file to run it. (For more details see <a
-href="https://code.visualstudio.com/docs/setup/windows">Visual Studio Code on Windows</a>.  
+href="https://code.visualstudio.com/docs/setup/windows">Visual Studio Code on Windows</a>.)
 
-Others editors that you can use are <a
-href="http://notepad-plus-plus.org/">Notepad++</a> or <a
-href="http://www.sublimetext.com/">Sublime Text</a>.  <strong>Be aware
-that you must add its installation directory to your system
-path.</strong> Please ask your instructor to help you do this.
 
 <!-- 
 #### Windows (on ASU laptop)
@@ -229,11 +285,9 @@ and you can use. Launch the editor from the Start Menu.
 
 We recommend <a href="https://code.visualstudio.com/">Visual Studio Code</a> as a good editor that
 is suitable for professional coding but also accessible to newcomers
-with is graphical user interface but there are also <a
-href="#alternative-editors-for-macos">alternative editors</a> available.
+with is graphical user interface.[^2]
 
 ##### Install Visual Studio Code for macOS
-
 
 To install *Visual Studio Code*, 
 
@@ -265,36 +319,24 @@ in that folder. (For more details see <a
 href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">
 Launching from the command line</a>.
 
-##### Alternative editors for macOS
-
-If you don't want to use VS Code, you can always use <a
-href="https://www.nano-editor.org/">nano</a>, which is a basic editor.
-It should be pre-installed.
-
-Others editors that you can use are <a
-href="http://www.barebones.com/products/textwrangler/">Text
-Wrangler</a> or <a href="http://www.sublimetext.com/">Sublime
-Text</a>.
 
 #### Linux
 
 We recommend <a href="https://code.visualstudio.com/">Visual Studio Code</a> as a good editor that
 is suitable for professional coding but also accessible to newcomers
-with is graphical user interface.
+with is graphical user interface.[^3]
 
 Please follow the instructions on <a
 href="https://code.visualstudio.com/docs/setup/linux">Visual 
 Studio Code on Linux</a> and ask an instructor for help if anything is
 unclear.
 
-Alternatively, <a href="https://www.nano-editor.org/">nano</a> is a
-basic editor.  It should be pre-installed.
 
-Others editors that you can use are <a
-href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>, <a
-href="http://kate-editor.org/">Kate</a> or <a
-href="http://www.sublimetext.com/">Sublime Text</a>.
+#### ChromeOS ####
 
+Follow [Chromebook: Install Visual Studio
+Code](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started#_install-vs-code)
+for all instruction.
 
 ### Python ###
 
@@ -446,6 +488,83 @@ before anything else.</li>
 	</li>
   </ol>
 
+#### ChromeOS ####
+
+Because ChromeOS only reserves a relatively small virtual disk for
+Linux we will not install the full Anaconda installation. Instead we
+install the small [miniconda
+installer](https://conda.io/projects/conda/en/latest/glossary.html#miniconda-glossary)
+and then only install the packages that we need for the class. But you
+can easily install any other packages that you might need yourself.
+
+
+##### Install miniconda
+
+We generally follow the original [installation instructions for
+Linux](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+but we will manually download the installer because we cannot easily
+transfer a downloaded file from Chrome's download folder to the Linux
+system.
+
+1. Open the *Terminal*.
+2. Create a download directory in your home directory
+   ```bash
+   cd
+   mkdir -p Downloads
+   ```
+3. Change to the Download directory
+   ```bash
+   cd Downloads
+   ```
+4. In your Chrome web browser: Obtain the **download link** for latest **Miniconda3** installer:
+   1. Go to the [miniconda Linux
+      installers](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+      page.
+   2. Find the latest Python version (e.g., 3.10). 
+   3. Look for the name **Miniconda3 Linux 64-bit**. 
+   4. **Copy the link** (E.g. in Chrome, hover over the [Miniconda3
+   Linux
+   64-bit](https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh)
+   entry and from the context menu choose *Copy Link Address*.)
+5. In *Terminal*: type `wget` and then **paste the URL**: it should
+   look like the following (but your link may be different) 
+   ```bash
+   wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
+   ```
+   Execute the `wget` command. You should see download progress.
+
+   (`wget` downloads from the commandline instead of using the browser.)
+6. You now have the installer file
+   `Miniconda3-py310_22.11.1-1-Linux-x86_64.sh` in your Downloads
+   directory (your name may be different but always start with
+   "Miniconda3-"). Run the installer with 
+   ```bash
+   bash Miniconda3-*-Linux-x86_64.sh
+   ```
+   * Press Enter to review the license agreement. Then press and hold Enter to scroll.
+   * Enter "yes" to agree to the license agreement.
+   * Use Enter to accept the default install location. (It will show something like `/home/YOUR_USERNAME/miniconda3`.)
+   * The installer prompts you to choose whether to initialize Anaconda Distribution by running `conda init`. Enter “yes”.
+   * The installer finishes.
+7. Close and reopen *Terminal*.
+
+   (You need to open a new Terminal so that the changes can take
+   effect that the installer made so that all conda packages are
+   found.)
+
+You can delete the miniconda installer unless you want to later
+re-install.
+
+#####  Install Python packages for the class
+
+We need a number of packages. In the following we install all of them
+at once but if you have issues with the process timing out then
+execute each installation separately.
+
+In the *Terminal*, run
+```bash
+conda install numpy pytest matplotlib scipy ipython jupyter ipympl pytest-timeout
+```
 
 
 ## Testing
@@ -588,3 +707,43 @@ ASU](http://smallerthings.org/2016-01-07_asu_physics/) and the [SWC
 Workshop Template](https://carpentries.github.io/workshop-template/)) and adapted
 for the PHY 432 class.
 
+Instructions for Chromebooks come from [Learning with VS Code on
+Chromebooks](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started)
+(December 3, 2020) by Alessandro Segala
+[@ItalyPaleAle](https://twitter.com/ItalyPaleAle).
+
+------------------------------------------------------------
+
+## Footnotes ##
+
+[^1]:
+
+     Others editors that you can use in **Windows** are <a
+	 href="http://notepad-plus-plus.org/">Notepad++</a> or <a
+	 href="http://www.sublimetext.com/">Sublime Text</a>.  <strong>Be aware
+	 that you must add its installation directory to your system
+	 path.</strong> Please ask your instructor to help you do this.
+
+[^2]:
+
+     **Alternative editors for macOS**: If you don't want to use VS Code, you can always use <a
+     href="https://www.nano-editor.org/">nano</a>, which is a basic editor.
+     It should be pre-installed.
+     Others editors that you can use are <a
+     href="http://www.barebones.com/products/textwrangler/">Text
+     Wrangler</a> or <a href="http://www.sublimetext.com/">Sublime
+     Text</a>.
+
+[^3]:
+
+     **Alternative editors for Linux**:
+	 [nano](https://www.nano-editor.org/) is a basic editor.  It
+	 should be pre-installed.
+	 Others editors that you can use are
+	 [Gedit](https://wiki.gnome.org/Apps/Gedit),
+	 [Kate](http://kate-editor.org/) or [Sublime
+	 Text](http://www.sublimetext.com).
+  	 More old-school (but very powerful) are
+ 	 [Emacs](http://www.gnu.org/software/emacs/) and
+ 	 [Vim](http://www.vim.org/) (both of which come with a steep
+ 	 learning curve)
