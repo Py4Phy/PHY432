@@ -15,18 +15,18 @@ timeline:
   - '3:00 PM'
 schedule:
   - name: Monday
+    events:
+      - name: Office Hours (TA)
+        start: 2:00 PM
+        end: 3:00 PM
+        location: Zoom
   - name: Tuesday
     events:
       - name: Lecture
         start: 1:30 PM
         end: 2:45 PM
         location: PSH 355
-  - name: Friday
-    events:
-      - name: Office Hours (TA)
-        start: 2:00 PM
-        end: 3:00 PM
-        location: Zoom
+  - name: Wednesday
   - name: Thursday
     events:
       - name: Office Hours (Instructor)
