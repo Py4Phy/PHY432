@@ -15,7 +15,7 @@ timeline:
   - '3:00 PM'
 schedule:
   - name: Monday
-      events:
+    events:
       - name: Office Hours (TA)
         start: 2:00 PM
         end: 3:00 PM
