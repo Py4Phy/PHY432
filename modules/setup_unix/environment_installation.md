@@ -215,12 +215,24 @@ Git should be installed on your computer as part of your Bash install
 
 #### macOS
 
-<strong>For macOS/Mac OS X 10.9 and higher</strong>, install Git for
-Mac by downloading and running the most recent "mavericks" installer
-from <a
+Recent versions of macOS should have `git` already
+installed (or you had it installed together with
+[Xcode](https://developer.apple.com/xcode/)). 
+Check on the command line by running the command
+```bash
+git version
+```
+If this gives an output such as *git version 2.41.0* then you have `git`.
+
+For older macOS/Mac OS X 10.9 and higher, install Git for Mac by
+downloading and running the most recent "mavericks" installer from <a
 href="https://sourceforge.net/projects/git-osx-installer/files/">this
-list</a>.  After installing Git, there will not be anything in your
-<code>/Applications</code> folder, as Git is a command line program.
+list</a>.  Because this installer is not signed by the developer, you
+may have to right click (control click) on the .pkg file, click Open,
+and click Open on the pop up window. After installing Git, there will
+not be anything in your <code>/Applications</code> folder, as Git is a
+command line program.
+
 
 
 #### Linux
@@ -228,11 +240,11 @@ list</a>.  After installing Git, there will not be anything in your
 If Git is not already available on your machine you can try to install
 it via your distro's package manager. For *Debian/Ubuntu* run 
 ```bash
-sudo apt-get install git
+sudo apt-get install git-all
 ```
 and for *Fedora* run 
 ```bash
-sudo yum install git
+sudo dnf install git-all
 ```
 
 #### ChromeOS ####
