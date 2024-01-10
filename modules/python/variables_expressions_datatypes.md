@@ -261,7 +261,7 @@ $$
 T = \frac{5}{9} (\theta - 32) + 273.15
 $$
 
-For write a program `tempconverter.py` that takes as input the
+Write a program `tempconverter.py` that takes as input the
 temperature in Fahrenheit $$\theta$$ and outputs $$T$$.
 
 

@@ -385,9 +385,11 @@ In `ipython` [^3]
         
 [^5]:
 
-    In Python 2, the `/` division operator would perform floor       division _if both operands were integers_ but normal ("true") division if
+    In Python 2, the `/` division operator would perform floor 
+    division _if both operands were integers_ but normal ("true") division if
     at least one operand was a floating point number. Therefore, in
     old Python 2 code you might see constructs such as `1.0 * a / 2`
-    to force a true division, no matter the value of the variable   `a`. In Python 3, the `/` operator _always_ 
+    to force a true division, no matter the value of the variable
+    `a`. In Python 3, the `/` operator _always_ 
     performs true division, which prevents some rather nasty bugs from occuring.
         
