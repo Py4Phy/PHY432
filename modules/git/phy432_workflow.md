@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  PHY432 git workflow
+parent: Tools
 nav_exclude: true
 ---
 

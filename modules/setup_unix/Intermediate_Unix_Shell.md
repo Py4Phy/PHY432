@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Intermediate Shell Hacks (optional)
+parent: Tools
+nav_order: 2
 nav_exclude: true
 ---
 

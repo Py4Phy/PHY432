@@ -1,6 +1,8 @@
 ---
 layout: default
 title: The Unix Shell
+parent: Tools
+nav_order: 1
 nav_exclude: true
 ---
 
