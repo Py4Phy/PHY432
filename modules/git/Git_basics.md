@@ -113,13 +113,9 @@ git config --global core.autocrlf input
 {% endhighlight %}
 
 ##### Default branch name #####
-Git histories can have different *branches*. The main development branch (the one we typically work on)
-used to be called "master" but this name is falling rapidly out of favor and the generally used name
-is now simply *"main"*. Newer version of git may use "main" by default but for consistency we can
-configure git to do so: 
-{% highlight bash %}
-git config --global init.defaultBranch main
-{% endhighlight %}
+
+Git histories can have different *branches*. The main development branch[^5] (the
+one we typically work on) is simply called *"main"*.[^1]
 
 
 ##### Config settings listing #####
@@ -128,7 +124,7 @@ You can see a list of all your configuration settings with `git config
 
 #### <span class="label" style="background: black">Activity</span> Git Editor
 
-You also tell what editor to use to write commit messages [^1]; here
+You also tell what editor to use to write commit messages [^2]; here
 we configure [Visual Studio Code to be used with git](https://help.github.com/articles/associating-text-editors-with-git/). 
 
 {% highlight bash %}
@@ -139,7 +135,7 @@ git config --global core.editor "code --wait"
 (If you want to choose another editor such as `nano`, ask an instructor. 
 If you do not make any choices, then the default editor is chose by the 
 system and it might be [`vim`](https://www.vim.org/), which is powerful
-but initially hard to learn.)  
+but initially hard to learn.)
 
 
 
@@ -157,10 +153,11 @@ try `git help` and `git help tutorial`.
 
 A repository starts from a directory with files.
 
-#### <span class="label" style="background: black">Activity</span> Create your `~/PHY432` directory ####
+#### <span class="label" style="background: black">Activity</span> Create your `~/PHY432` working directory ####
 
 During the class you will work on programs. We will store all this work in a specific directory
-for the class named `~/PHY432`, to keep things tidy. 
+for the class named `~/PHY432`, to keep things tidy. `~/PHY432` will be our
+**working directory**.
 
 Make a directory `~/PHY432` where you will do your work:[^9]
 {% highlight bash %}
@@ -228,7 +225,7 @@ use `ls -R ~/PHY432` to check):
 
 #### <span class="label" style="background: black">Activity</span> Initializing a repository with `git init` ####
 
-Turn the `PHY432` directory into **repository** with the `git init` command:
+Turn the `PHY432` working directory into a **repository** with the `git init` command:
 
 {% highlight bash %}
 cd ~/PHY432
@@ -241,12 +238,12 @@ That's it. Although, not much happened yet... except, check with
 ls -la
 {% endhighlight %}
 
-A new hidden directory `~/PHY432/.git/` appeared. This is your actual
-repository (or database) where Git stores all its information. **Do
-not change anything in this directory** (unless you really know what
-you are doing) and **do not delete the `.git`** directory. If you
-delete it, your repository is irrevocably gone (and there is no undo
-for that!).
+A new hidden directory `~/PHY432/.git/` appeared inside the working
+directory. This is your actual repository (or database) where Git stores all
+its information. **Do not change anything in this directory** (unless you
+really know what you are doing) and **do not delete the `.git`** directory. If
+you delete it, your repository is irrevocably gone (and there is no undo for
+that!).
 
 Now try the (possibly) most-used git command:
 
@@ -268,18 +265,18 @@ Untracked files:
 
 ... but what does it mean? For this
 [gobbledygook](https://www.merriam-webster.com/dictionary/gobbledygook)
-to make sense we need to know about *the three stages of git*:
+to make sense we need to know about *the three states of git*:
 
 
 ### The three states of Git ###
 
-For Git, a file can reside in one of *three states*
+For Git, a *file* can be in one of *three states*:
 
 - **Modified** means that you have changed the file but have not
   committed it to your database yet; the file is in the **working directory**. 
 - **Staged** means that you have marked a modified file in its current
   version to go into your next commit snapshot; it lives in the
-  **staging area** [^5].
+  **staging area** [^6].
 - **Committed** means that the data is safely stored in your local
   database (the **git repository** in the `.git` directory).
 
@@ -352,7 +349,7 @@ git commit
   line summary of changes"`.
 * **If you are having problems to make `git commit` with your editor
   work** then instead use `git commit -m 'one line summary message'`
-  and debug this problem later.[^1]
+  and debug this problem later.[^2]
 * Check the status with `git status`...
 
 For a new commit, [add files](#adding-files) and [commit](#committing)
@@ -479,18 +476,18 @@ Let's set up a remote repository for your work in the class.
 ### <span class="label" style="background: black">Activity</span> Create GitHub repo and authentication ###
 
 1. Go to <https://github.com> and create a new account. It is
-   free.[^2] Remember your
+   free.[^3] Remember your
    GitHub **username** and the **password**.
 2. Create a new repository *PHY432* (do not initialize it with a
    README or other file). You can make it *private* if you like.
 3. Note the repository URL
    https://github.com/USERNAME/PHY432.git   
 4. Set-up **authentication** with a [Personal Access
-   Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-   [^3].
+   Token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+   [^4].
    
-   Follow the instructions to [create a
-   token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token).
+   Follow the instructions to [create a personal access token
+   (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
    
    - Name it "PHY432 class" (something that tells you what to use
      it for).
@@ -535,18 +532,29 @@ We now have to set the newly created, empty GitHub repository as the remote repo
    git remote -v
    ```
 
-2. Traditionally, git used the name "master" for the main branch of
-   the work. However, this name is falling rapidly out of favor and
-   newer version of git default to the name **"main"**. 
+2. Check that your local repository has a branch [^5] called "main":
+
+   ```bash
+   git branch
+   ```
    
-   If you have a version of git that insists on "master", rename our
-   branch to "main":
+   should show
+   
+   ```
+   * main
+   ```
+   
+   If the branch is called "main" then you don't have to do anything else.
+
+   Else if you have an old version of git that still calls the default branch
+   "master" [^1], rename our branch to "main"
 
    ```bash
    git branch -M main
    ```
-
-   (You only have to do this once.)
+   
+   so that the local repository agrees with the remote repository on
+   GitHub. You only have to do the renaming once.
 
 
 ### <span class="label" style="background: black">Activity</span> Update (push) local content for the first time ###
@@ -573,7 +581,7 @@ appear.
 
 You only need the `--set-upstream origin main` (or `-u origin main`) for the
 first time (it tells git which "branches" to associate with each other in local
-and remote) [^4]. 
+and remote) [^5]. 
 
 The next time, just run
 {% highlight bash %}
@@ -693,6 +701,18 @@ enables you to easily contribute to other projects. This includes
 
 [^1]:
 
+     
+      The main branch used to be called "master" but this name is falling
+      rapidly out of favor and the generally used name is now main. Newer
+      version of git use "main" by default but for consistency we can configure
+      git to do so (or if we are working with an old version of `git`):
+      
+          git config --global init.defaultBranch main
+
+
+
+[^2]:
+
      See also Software Carpentry's list of
      [git configuration options for different
 	 editors](https://swcarpentry.github.io/git-novice/02-setup/) and 
@@ -705,7 +725,7 @@ enables you to easily contribute to other projects. This includes
      [How can I set up an editor to work with Git on Windows?](https://stackoverflow.com/questions/10564/how-can-i-set-up-an-editor-to-work-with-git-on-windows)
      as a starting point for various recipes.
 	 
-[^2]:
+[^3]:
 
      An unlimited number of *public* (i.e., visible for everyone)
      repositories are free on GitHub but private repositories cost
@@ -716,22 +736,26 @@ enables you to easily contribute to other projects. This includes
     discount](https://help.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/discounted-subscriptions-for-github-accounts);
     see also the [GitHub Education](https://education.github.com/) site.
 	 
-[^3]:
+[^4]:
 
-     There are ways to set up remote repositories so that you don't
-     have to provide username and password for every push and which
-     are also more secure. Namely one can use SSH keys instead of the
+     There are ways to set up remote repositories with using SSH keys instead of the
      HTTPS protocol, as described in the GitHub tutorial on
      [Generating SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 
-[^4]:
+[^5]:
 
-    *Branching* is a more advanced topic, which is explained in the
+    A *branch* is a parallel development history. Git allows you to split the
+	history and then *merge* the branches again. This approach makes it easier
+	to work on experimental features in parallel to a stable development
+	line. It also allows multiple developers to work on a single project
+	without disturbing each other's work.
+	
+	*Branching* is a more advanced topic, which is explained in the
     materials linked under [More...](#more). We barely scratched the
     surface of Git but this will be sufficient to already make good
     use of this very powerful tool.
 
-[^5]:
+[^6]:
 
     Technically, the *staging area* (or *index*) is also located in
     the `.git` directory but that is not really
@@ -747,7 +771,7 @@ enables you to easily contribute to other projects. This includes
     
 [^8]:
 
-    If you do not want to have to enter your username and password
+    If you do not want to have to enter your username and token
     every time you do a remote operation, you can also store username
 	and access token in the remote name. In the following, replace
     *USERNAME* with your GitHub username and  *TOKEN* with
