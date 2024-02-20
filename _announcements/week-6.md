@@ -1,7 +1,7 @@
 ---
 title: Week 6 & 7 Announcement
 week: 6
-date: 2023-02-12
+date: 2024-02-12
 ---
 
 In Week 6 we will start a long module on **solving ordinary
