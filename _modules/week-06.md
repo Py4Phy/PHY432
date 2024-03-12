@@ -22,3 +22,8 @@ Feb 22, Feb 27
 
 : [Integrators]({{ site.baseurl }}{% link modules/ODEs/integrators.md %})
   : basic algorithms (Euler, Runge-Kutta, Verlet) for numerically integrating coupled ODEs
+
+Feb 29
+
+: Theory of symplectic integration
+  : Hamilton's equation of motion, energy conservation, and why the semi-implicit Euler algorithm conserves energy
