@@ -31,7 +31,7 @@ schedule:
     events:
       - name: Office Hours (Instructor)
         start: 11:00 AM
-        end: 12:00 AM
+        end: 12:00 PM
         location: Zoom	
       - name: Lecture
         start: 1:30 PM
