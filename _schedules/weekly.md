@@ -16,7 +16,7 @@ timeline:
 schedule:
   - name: Monday
     events:
-      - name: Office Hours (TA)
+      - name: Office Hours (TA) -- to be confirmed
         start: 2:00 PM
         end: 3:00 PM
         location: Zoom
@@ -30,8 +30,8 @@ schedule:
   - name: Thursday
     events:
       - name: Office Hours (Instructor)
-        start: 10:00 AM
-        end: 11:00 AM
+        start: 11:00 AM
+        end: 12:00 AM
         location: Zoom	
       - name: Lecture
         start: 1:30 PM
