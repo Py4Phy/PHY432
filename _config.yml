@@ -37,10 +37,10 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
-  Canvas (Spring 2024):
-    - 'https://asu.instructure.com/courses/178447'
+  Canvas (Spring 2025):
+    - 'https://asu.instructure.com/courses/213596'
   Discord:
-    - 'https://discord.com/channels/1192515875673223209/'
+    - 'https://discord.com/channels/1327758612155859077'
   Py4Phy:
     - 'https://github.com/Py4Phy'
   ASU Physics:
@@ -110,8 +110,8 @@ course:
  url:                "https://becksteinlab.physics.asu.edu/learning/146/phy432-computational-physics"
 
 canvas:
- name:               "Canvas (ASU PHY432 Spring 2024)"
- url:                "'https://asu.instructure.com/courses/178447'"
+ name:               "Canvas (ASU PHY432 Spring 2025)"
+ url:                https://asu.instructure.com/courses/213596
 
 resources:
  name:               Py4Phy/PHY432-resources
