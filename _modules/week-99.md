@@ -2,30 +2,26 @@
 title: Final Project
 ---
 
-March 28
+April 3
 : Final Project Overview
   : Introduction to the *Final Project*: time line, proposal, pitches
 
-April 4
-
+April 8
 : Project pitches
   : Present your project to the class and gather a team.
   
-April 27
-
+May 3
 : abstracts
   : submit your project abstract
   
-April 29
-
+May 5
 : presentations
   : submit your project presentation video
 
 : code
   : submit your project code to your repository
   
-April 30--May 3
-
+May 6 -- May 8
 : Q&A
   : virtual Q&A with each team
   
