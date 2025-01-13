@@ -15,11 +15,6 @@ timeline:
   - '3:00 PM'
 schedule:
   - name: Monday
-    events:
-      - name: Office Hours (TA) -- to be confirmed
-        start: 2:00 PM
-        end: 3:00 PM
-        location: Zoom
   - name: Tuesday
     events:
       - name: Lecture
@@ -32,7 +27,7 @@ schedule:
       - name: Office Hours (Instructor)
         start: 11:00 AM
         end: 12:00 PM
-        location: Zoom	
+        location: Zoom or PSF 348
       - name: Lecture
         start: 1:30 PM
         end: 2:45 PM
