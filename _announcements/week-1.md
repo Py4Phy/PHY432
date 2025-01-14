@@ -1,7 +1,7 @@
 ---
 title: Week 1 Announcement
 week: 1
-date: 2024-01-14
+date: 2025-01-14
 ---
 
 The plan for this week is to
