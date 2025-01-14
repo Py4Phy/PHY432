@@ -393,7 +393,7 @@ distribution (such as <code>conda</code>) from the Git Bash command line.
 We are adding additional information to your bash shell startup file so that Anaconda will be found.
 
 ⚠️ These instructions assume that **you installed Anaconda3 in the
-default location** (`C:\Users\YOUR-USERNAME\Anaconda3`)— if _you_
+default location** (`C:\Users\YOUR-USERNAME\anaconda3`)— if _you_
 changed the location in the installation process then you will have to
 change the content of the `MYCONDA` variable below to use your custom
 location (ask an instructor for help if you are unsure how to do
@@ -415,7 +415,7 @@ The following commands must be typed exactly in *Git Bash*:
    ```bash
    cat >> $HOME/.bash_profile << 'EOF'
    # PHY432 bash startup for local Anaconda
-   MYCONDA="$HOME/Anaconda3"
+   MYCONDA="$HOME/anaconda3"
    export PATH="$MYCONDA:$MYCONDA/Scripts:$MYCONDA/Library/bin:$PATH"
    unset MYCONDA
    EOF
@@ -426,7 +426,7 @@ The following commands must be typed exactly in *Git Bash*:
    ```bash
    which conda
    ```
-   Should print something like `/c/Users/YOUR-USERNAME/Anaconda3/Scripts/conda`.
+   Should print something like `/c/Users/YOUR-USERNAME/anaconda3/Scripts/conda`.
 
 ⚠️ If the last step did not work then **ask an instructor for help**. 
 You can also look at the detailed explanation in the PHY432
@@ -446,13 +446,13 @@ troubleshooting wiki, [solution: pip or python are not found in
         <li>Download the Python 3 installer for Windows.</li>
         <li>Install Python 3 using all of the defaults for
     installation <em>except</em> make sure to check <strong>Make
-    Anaconda the default Python</strong> and set the destination folder to <strong>C:\ProgramData\Anaconda3</strong>.</li>
+    Anaconda the default Python</strong> and set the destination folder to <strong>C:\ProgramData\anaconda3</strong>.</li>
 		<li>Open the Git Bash command line</li>
 		<li>Append (<tt>>></tt>) to the file <tt>$HOME/.bash_profile</tt> the following content by typing
 		<pre>
 cat >> $HOME/.bash_profile << 'EOF'
 # PHY432 bash startup for local Anaconda
-MYCONDA="/c/ProgramData/Anaconda3"
+MYCONDA="/c/ProgramData/anaconda3"
 export PATH="$MYCONDA:$MYCONDA/Scripts:$MYCONDA/libs/bin:$PATH"
 unset MYCONDA
 EOF
@@ -701,9 +701,9 @@ If you have problems, ask an instructor.
   --ip=127.0.0.1`
 * Wrong `conda` is used. Check `which conda` in the terminal: it
   should show a path in your home directory (e.g., for user "physics":
-  Windows: `/c/Users/Physics/Anaconda3/conda`, macOS:
-  `/Users/physics/Anaconda3/conda`, Linux:
-  `/home/physics/Anaconda3/conda`). Try exiting the terminal and open
+  Windows: `/c/Users/Physics/anaconda3/conda`, macOS:
+  `/Users/physics/anaconda3/conda`, Linux:
+  `/home/physics/anaconda3/conda`). Try exiting the terminal and open
   a new terminal (or Git Bash) and try again. Changes to `PATH` only
   take effect when a new shell is opened.
 
