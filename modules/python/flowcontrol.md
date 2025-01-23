@@ -311,7 +311,7 @@ print("Theta(" + str(x) + ") = " + str(theta))
 Run `heaviside.py` for various values of `x` (at least -3, 0, 3) and
 test the output against the mathematical definition.
 
-#### <span class="label" style="background: black">Activity</span> Guessing game I
+#### <span class="label" style="background: gray">Exercise</span> Guessing game I
 
 Write a program `guessinggame.py` that takes a single number `guess`
 as input and compares it to a preset integer number
@@ -341,16 +341,17 @@ number = random.randint(1, 1000)  # secret integer number between 1 and 1000
 {% endhighlight %}
 
 
-#### <span class="label" style="background: black">Activity</span> Guessing game II
+#### <span class="label" style="background: gray">Exercise</span> Guessing game II
 Perform this activity using *pair programming*[^3].
 
 Enhance the simple guessing game from the previous exercise with the
-following features:
+following feature:
 
-1. Let the player guess repeatedly. Count the number of guesses and print
-   them once the player guesses correctly. 
-2. Provide feedback to the user if the number was bigger than the
-   secret number ("Too big!") or smaller ("Too small!").
+* Let the player guess repeatedly. Count the number of guesses and print
+  them once the player guesses correctly.
+   
+As before, provide feedback to the user if the number was bigger than the
+secret number ("Too big!") or smaller ("Too small!").
 
 You *may* use the following *incomplete* code as a starting point:
 
@@ -369,8 +370,10 @@ guess = int(input("Guess the number between 1 and 1000: "))
 print(f"Congratulations, you guessed the number {secret_number} in {n_guesses} guesses")
 {% endhighlight %}
 
-Bonus question: What is the optimal general strategy to guess the
-number in this game? How many guesses do you need at most?
+*Bonus question:* What is the optimal general strategy to guess the
+number in this game? How many guesses do you need at most? Calculate
+the optimal number of guesses and tell the user if they could have
+done better.
 
 #### `break` and `continue`
 The `break` statement ends a `for` or `while` loop.
