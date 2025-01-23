@@ -43,8 +43,8 @@ and have a look at [Python questions on StackOverflow](https://stackoverflow.com
 ### work directory
 
 1. Open a terminal.
-2. Create our "work directory" `~/PHY432/04_python`
-3. `cd` into `~/PHY432/04_python`
+2. Create our "work directory" `~/PHY432/03_python`
+3. `cd` into `~/PHY432/03_python`
 
 
 ### ipython
@@ -56,7 +56,7 @@ in a terminal window with
 ipython
 {% endhighlight %}
 
-Check that you are in the `~/PHY432/04_python` directory by typing in
+Check that you are in the `~/PHY432/03_python` directory by typing in
 ipython (note the percentage sign in `%pwd`):
 {% highlight python %}
 %pwd
@@ -64,7 +64,7 @@ ipython (note the percentage sign in `%pwd`):
 You should see
 
 ~~~~~
-Out[1]: '/Users/YOUR_USERNAME/PHY432/04_python'
+Out[1]: '/Users/YOUR_USERNAME/PHY432/03_python'
 ~~~~~
 
 or similar. 
