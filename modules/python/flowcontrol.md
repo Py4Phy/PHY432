@@ -375,7 +375,12 @@ number in this game? How many guesses do you need at most? Calculate
 the optimal number of guesses and tell the user if they could have
 done better.
 
-#### `break` and `continue`
+### Changing the flow: `break` and `continue`
+
+Normal flow can be *changed* with the `break` and the `continue`
+statement by "stepping out" of the current code block.
+
+#### `break`
 The `break` statement ends a `for` or `while` loop.
 
 The following example reads data from input until the special word "STOP" is encountered:
@@ -409,6 +414,7 @@ print(value)
 {% endhighlight %}
 
 
+#### `continue`
 
 The `continue` statement immediately starts the next loop iteration.
 
