@@ -287,10 +287,10 @@ print(values)
 ## More resources
 
 * Software Carpentry's lesson on
-  [Errors and Exceptions](http://swcarpentry.github.io/python-novice-inflammation/09-errors/)
-  and [Debugging](http://swcarpentry.github.io/python-novice-inflammation/11-debugging/)
-* [Scipy lecture notes: Debugging](http://www.scipy-lectures.org/advanced/debugging/)
-  by GaÃ«l Varoquaux (advanced level)
+  [Errors and Exceptions](https://swcarpentry.github.io/python-novice-inflammation/09-errors.html)
+  and [Debugging](https://swcarpentry.github.io/python-novice-inflammation/11-debugging.html)
+* [Scipy lecture notes: Debugging](https://lectures.scientific-python.org/advanced/debugging/index.html)
+  by Gael Varoquaux (advanced level)
 
 
 ------------------------------------------------------------
