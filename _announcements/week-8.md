@@ -1,7 +1,7 @@
 ---
 title: Week 8 Announcement
 week: 8
-date: 2025-03-17
+date: 2025-03-10
 ---
 
 With the *RK4* and the *velocity Verlet* integrator we now know two
