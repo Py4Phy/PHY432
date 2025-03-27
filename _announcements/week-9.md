@@ -1,17 +1,25 @@
 ---
-title: Week 8.5 Announcement
-week: 8.5
-date: 2025-03-20
+title: Week 9 Announcement
+week: 9
+date: 2025-03-27
 ---
 
-A common problem is to **find the roots** $$x_0$$ of an equation,
-$$f(x_0)=0$$. We will develop two algorithms to find roots
-numerically. The *bisection* algorithm is a simple and robust approach
-that exemplifies how to go from imagining a solution ("how would I
-solve this problem?") to an actual implementation. We then will
-develop a much faster but less robust algorithm known as
-*Newton-Raphson*. In both cases we will initially restrict ourselves
-to 1D problems. We then find that we can easily extend Newton-Raphson
-to arbitrary dimensions to solve $$\mathbf{f}(\mathbf{x}_0) =
-\mathbf{0}$$ but we will need to learn how solve *matrix equations*,
-which directly leads us into **linear algebra**.
+A lot of physics can be formulated in the language of **linear
+algebra** with vectors and matrices. Examples are problems in solid
+body mechanics and quantum mechanics. Three commonly encountered
+requirements are to find solutions to a matrix equation $$\mathsf{A}
+\mathbf{x} = \mathbf{b}$$, finding the inverse of a matrix
+$$\mathsf{A}^{-1}$$, and solving the eigenproblem $$\mathsf{A}
+\mathbf{v}_i = \lambda_i \mathbf{v}_i$$. Instead of writing our own
+solvers, we will learn how to use the routines in
+[numpy.linalg](https://numpy.org/doc/stable/reference/routines.linalg.html),
+NumPy's linear algebra module, which provides efficient and
+well-tested algorithm.
+
+A matrix solver is also needed for generalizing the *Newton-Raphson*
+[root finding algorithm from the last module]({{ site.baseurl }}{%
+link modules/root_finding/Root_finding.md %}) to arbitrary
+dimensions. We will develop a general Newton-Raphson solver (and also
+learn how to calculate the Jacobian using partial derivatives, based
+on the central difference algorithm from the [lesson on
+differentiation](modules/ODEs/differentiation.md)).
