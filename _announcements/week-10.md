@@ -1,7 +1,7 @@
 ---
-title: Week 10 Announcement
-week: 10
-date: 2025-03-27
+title: Week 9 Announcement
+week: 9
+date: 2025-03-24
 ---
 
 A lot of physics can be formulated in the language of **linear
